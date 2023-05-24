@@ -1,0 +1,29 @@
+.header {
+  position: sticky;
+  height: 80px;
+  top: 0;
+  background: linear-gradient(to top right, #d5d5d5 50%, #fc9595 78%);
+  z-index: 10;
+}
+
+.header__content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header__logo img {
+  height: 80px;
+}
+
+.header__nav__list {
+display: flex;
+font-size: 20px;
+gap: 15px;
+cursor: pointer;
+color: var(--white);
+}
+
+.header__nav__link {
+
+}

@@ -1,0 +1,18 @@
+/* main */
+
+@import "normalize.css";
+@import "style.css";
+
+
+/* components */
+
+@import "components/header.css";
+@import "components/hero.css";
+@import "components/beton.css";
+
+
+:root {
+    --black: black;
+    --white: white;
+
+}
