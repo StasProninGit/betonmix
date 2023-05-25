@@ -11,9 +11,10 @@
 .tabs {
   position: relative;
   display: flex;
-  min-height: 300px;
+  min-height: 450px;
   border-radius: 8px 8px 0 0;
-  overflow: hidden;
+  margin-bottom: 60px;
+
 }
 
 .tabby-tab {
@@ -28,14 +29,18 @@
 
   padding: 10px;
   text-align: center;
-  background: #8d8d8d;
+  background: var(--brown);
   cursor: pointer;
-  transition: background 0.5s ease;
+  transition: background 0.5s ease, color 0.5s ease;
+  color: var(--white);
+  font-weight: 800;
 
 }
 
 .tabby-tab label:hover {
   background: #fdfdfd;
+  color: black;
+
 }
 
 .tabby-content {
@@ -61,6 +66,8 @@
 }
 
 .tabby-content img {
+  width: 200px;
+  height: 200px;
   float: left;
   margin-right: 20px;
   border-radius: 8px;
@@ -100,3 +107,42 @@
     margin-bottom: 20px;
   }
 }
+
+/* Таблица */
+.beton__table {
+  text-decoration: none;
+  border-collapse:collapse;
+  text-align:center
+}
+
+.beton__table__body {
+
+}
+.beton__tr {
+
+}
+
+.beton__td,
+.beton__th {
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+
+table.beton__table tr:hover {
+  background-color:#f9fafb;
+}
+
+table.beton__table tr:hover td {
+  color:#354251;
+  cursor:default;
+}
+
+.beton__tr .beton__th {
+  background-color: var(--brown);
+  color: var(--white);
+  border: var(--brown);
+}
+
+
+
+
