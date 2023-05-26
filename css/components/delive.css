@@ -1,0 +1,31 @@
+.delive__text {
+  display: flex;
+  gap: 15px;
+
+}
+
+.delive__p {
+  padding: 10px;
+  max-width: 500px;
+  font-size: 14px;
+  font-weight: 500;
+
+
+}
+.delive__img {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.delive__img svg {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.delive__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+  box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
+}

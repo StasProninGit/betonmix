@@ -63,6 +63,8 @@
     transform: scale(0.1);
     transform-origin: top left;
 
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
+
 }
 
 .tabby-content img {
@@ -140,7 +142,6 @@ table.beton__table tr:hover td {
 .beton__tr .beton__th {
   background-color: var(--brown);
   color: var(--white);
-  border: var(--brown);
 }
 
 
