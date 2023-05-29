@@ -1,3 +1,7 @@
+.delive__content {
+  margin-bottom: 30px;
+}
+
 .delive__text {
   display: flex;
   gap: 15px;

@@ -1,0 +1,70 @@
+.delive__price {
+  background-image: linear-gradient(to top, rgba(89,106,114, 0.8), rgba(219, 219, 214, 0.8)), url(
+    "/img/deliver1.jpg");
+    background-repeat: no-repeat;
+
+  background-size: cover;
+  height: 600px;
+}
+
+.delive__price__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+table.redTable {
+  border: 2px solid var(--brown);
+  background-color: #EEE7DB;
+  width: 600px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 15px;
+  font-weight: 600;
+}
+table.redTable tr:nth-child(even) {
+  background: #F5C8BF;
+}
+table.redTable thead {
+  background: var(--brown);
+
+}
+table.redTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #AAAAAA;
+}
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot td {
+  font-size: 13px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.delive__price__img img {
+  max-width: 500px;
+  position: absolute;
+  top: -150px;
+  right: 0;
+
+}
