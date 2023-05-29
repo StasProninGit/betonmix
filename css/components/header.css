@@ -4,6 +4,7 @@
   top: 0;
   background: linear-gradient(to top right, #cccccc80 50%, #cccccc80 78%);
   z-index: 10;
+  backdrop-filter: blur(5px);
 }
 
 .header__content {
