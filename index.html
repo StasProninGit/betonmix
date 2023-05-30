@@ -60,11 +60,12 @@
               <h1 class="hero__title section-title">
                 Заказать Бетон с доставкой в Москве и Московской области
               </h1>
-              <a href="#" class="hero__button hvr-icon-fade btn"><ya-tr-span data-index="66-0" data-translated="true"
+
+              <button class="hero__button hvr-icon-fade btn " id="myBtn1"><ya-tr-span data-index="66-0" data-translated="true"
                   data-source-lang="en" data-target-lang="ru" data-value=" Icon Fade "
                   data-translation=" Значок исчезает " data-ch="0" data-type="trSpan" data-selected="false"> Заказать
                   звонок </ya-tr-span><i class="fa fa-check hvr-icon"></i>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -98,7 +99,7 @@
                     <td class="beton__td">П3 F75 W2</td>
                     <td class="beton__td">4400.00 руб.</td>
                     <td class="beton__td">
-                      <button class="btn btn-reset">
+                      <button class="btn btn-reset " id="myBtn2">
                         Заказать
                       </button>
                     </td>
@@ -109,7 +110,7 @@
                     <td class="beton__td">П4 F75 W4</td>
                     <td class="beton__td">4550.00 руб.</td>
                     <td class="beton__td">
-                      <button class="btn btn-reset">
+                      <button class="btn btn-reset modalbtn">
                         Заказать
                       </button>
                     </td>
@@ -960,13 +961,9 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <article class="card">
-                  <img
-                    class="card__background"
-                    src="/img/32.jpg"
-                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                    width="1920"
-                    height="2193"
-                  />
+                  <img class="card__background" src="/img/32.jpg"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                    height="2193" />
                   <div class="card__content | flow">
                     <div class="card__content--container | flow">
                       <h2 class="card__title">Автобетононасос 32м</h2>
@@ -1000,6 +997,42 @@
 
     </section>
 
+
+
+  </main>
+
+
+
+  <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Оставьте свой телефон и с вами свяжется специалист</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form id="tg">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Mail</label>
+              <input type="text" class="form-control" name="tel" aria-describedby="emailHelp" placeholder="Введите tel">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Имя</label>
+              <input type="text" class="form-control" name="name" placeholder="Введите Имя">
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <dialog class="modal">
     <form id="tg">
       <div class="form-group">
         <label for="exampleInputEmail1">Mail</label>
@@ -1009,11 +1042,69 @@
         <label for="exampleInputPassword1">Имя</label>
         <input type="text" class="form-control" name="name" placeholder="Введите Имя">
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Отправить</button>
     </form>
 
-  </main>
+  </dialog>
 
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body"><iframe name="myiframe"></iframe>
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    var modal = document.getElementById('myModal');
+
+var myBtn = document.getElementsByClassName('myBtn');
+var close = document.getElementsByClassName('close')[0];
+/*
+А это в цикле прокруциваем те элементы которыми мы открываем модал окно
+и обработчик события который открывет окно
+*/
+for (var i = 0; i < myBtn.length; i++) {
+  myBtn[i].addEventListener('click', function() {
+    openModalWindow();
+  })
+}
+// это обработчик события, который в нутри этой функции выполнят ту функцию
+//которая закрывает окно модальное
+close.addEventListener('click', function() {
+  closeModalWindow();
+})
+
+//это функция, которая открывает окно
+function openModalWindow() {
+  modal.style.display = "block";
+}
+
+//это функция, которая закрывает окно
+function closeModalWindow() {
+  modal.style.display = "none";
+}
+
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
+
+function OpenModal() {
+     modal.style.display = "block";
+}
+
+btn1.onclick = OpenModal;
+btn2.onclick = OpenModal;
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
