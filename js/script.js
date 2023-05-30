@@ -1,3 +1,4 @@
+// Яндекс Карта
 function init() {
   let map = new ymaps.Map('map', {
     center : [55.71289987232157,37.69605636770621],
@@ -49,6 +50,7 @@ function init() {
 ymaps.ready(init);
 
 
+// Свайпер насосы
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
@@ -60,4 +62,40 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+
+const TOKEN = "5753763390:AAEiWWOLgSBokq_A3XaYeXJFLVW4S84hi5w";
+const CHAT_ID = "-1001944603862";
+const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+const suc = document.getElementById('suc');
+const suc2 = document.getElementById('suc2');
+
+document.getElementById('tg').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  let message = 'Заявка с Сайта!\n';
+  message += `Имя: ${this.name.value}\n`;
+  message += `Тел: ${ this.tel.value}\n`;
+
+
+  axios.post(URI_API, {
+    chat_id: CHAT_ID,
+    pars_mode: 'html',
+    text: message
+  })
+  .then((res) => {
+    this.name.value ="";
+    this.tel.value ="";
+
+    // suc.innerHTML = "Сообщение отправлено";
+    // suc.style.display = "block";
+  })
+  .catch((err) => {
+    console.warn(err);
+  })
+  .finally((res) => {
+    console.log('Конец')
+  })
+
+})
 
