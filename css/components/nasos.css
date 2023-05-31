@@ -25,6 +25,21 @@
   object-fit: cover;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+z-index: 2;
+bottom: 0;
+top: 0;
+left: 0;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: var(--brown);
+}
+
+
 
 
 
@@ -35,7 +50,7 @@
   place-items: center;
   width: 80vw;
   max-width: 21.875rem;
-  height: 28.125rem;
+  height: 350px;
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
@@ -69,7 +84,7 @@
 }
 
 .card__content--container {
-  --flow-space: 1.25rem;
+  --flow-space: 100px ;
 }
 
 .card__title {
@@ -90,23 +105,25 @@
 }
 
 .card__button {
-  padding: 0.75em 1.6em;
+  padding: 7px 15px;
   width: fit-content;
-  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
   font-variant: small-caps;
   font-weight: bold;
-  border-radius: 0.45em;
+  font-size: 16px;
+  color: var(--white);
+  outline: none;
   border: none;
-  background-color: var(--brand-color);
-  font-family: var(--font-title);
-  font-size: 1.125rem;
-  color: var(--black);
+  transition: all 0.3s ease-in-out;
 }
 
-.card__button:focus {
+.card__button:hover {
+  background-color: var(--gray);
+}
+
+/* .card__button:focus {
   outline: 2px solid black;
   outline-offset: -5px;
-}
+} */
 
 @media (any-hover: hover) and (any-pointer: fine) {
   .card__content {
@@ -160,7 +177,7 @@
   .card:focus-within .card__button {
     opacity: 1;
     transition: opacity 500ms ease-in;
-    transition-delay: 1000ms;
+    transition-delay: 500ms;
   }
 
   .card:hover .card__title::after,
@@ -172,3 +189,13 @@
     transition-delay: 500ms;
   }
 }
+
+.card__description {
+  color:#fff;
+}
+
+.card__description li {
+  margin-bottom: 15px;
+}
+
+
