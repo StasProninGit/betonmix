@@ -1,0 +1,40 @@
+.footer {
+  background: linear-gradient(to top right, #cccccc80 50%, #cccccc80 78%);
+  backdrop-filter: blur(5px);
+
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo img {
+  height: 80px;
+}
+
+.footer__social__link__icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--brown);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__social__link__icon:hover {
+  transform: scale(1.2);
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer__bottom__title {
+  border-top: 1px solid black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0;
+}

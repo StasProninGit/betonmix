@@ -27,12 +27,24 @@
 }
 
 
-.map__adress__title::before {
+.map__adress__title:not(:first-child)::before {
   content: "";
-  background-image: url(https://cdn.icon-icons.com/icons2/1727/PNG/512/3986711-building-factory-industry-icon_112974.png);
+  background-image: url(https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png);
   background-size: cover;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.title__adress::before {
+  content: "";
+  background-image: url(https://icon666.com/r/_thumb/4n5/4n52cinxh0yc_64.png);
+  background-size: cover;
+  height: 40px;
+  width: 40px;
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;

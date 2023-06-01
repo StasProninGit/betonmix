@@ -2,16 +2,30 @@
 function init() {
   let map = new ymaps.Map('map', {
     center : [55.71289987232157,37.69605636770621],
-    zoom: 11
+    zoom: 10
 
 
   });
 
-  55.681904569055,37.6078345
+  55.790307068946255,37.377111499999984
+
+  let placemark5 = new ymaps.Placemark([55.790307068946255,37.377111499999984], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
+    iconImageSize: [40, 40],
+    iconImageOffset: [0, 0]
+  });
+
+  let placemark4 = new ymaps.Placemark([55.88255144861844,37.62693048530211], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
+    iconImageSize: [40, 40],
+    iconImageOffset: [0, 0]
+  });
 
   let placemark3 = new ymaps.Placemark([55.681904569055,37.6078345], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/512/3986711-building-factory-industry-icon_112974.png',
+    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
     iconImageSize: [40, 40],
     iconImageOffset: [0, 0]
   });
@@ -19,7 +33,7 @@ function init() {
 
   let placemark2 = new ymaps.Placemark([55.706089564666705,37.700657378616334], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/512/3986711-building-factory-industry-icon_112974.png',
+    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
     iconImageSize: [40, 40],
     iconImageOffset: [0, 0]
   });
@@ -28,8 +42,8 @@ function init() {
 
   let placemark = new ymaps.Placemark([55.71289987232157,37.69605636770621], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://cdn.icon-icons.com/icons2/3528/PNG/512/mixer_truck_vehicle_construction_work_icon_221343.png',
-    iconImageSize: [40, 40],
+    iconImageHref: 'https://icon666.com/r/_thumb/4n5/4n52cinxh0yc_64.png',
+    iconImageSize: [45, 45],
     iconImageOffset: [0, 0]
   });
 
@@ -45,6 +59,8 @@ function init() {
   map.geoObjects.add(placemark);
   map.geoObjects.add(placemark2);
   map.geoObjects.add(placemark3);
+  map.geoObjects.add(placemark4);
+  map.geoObjects.add(placemark5);
 }
 
 ymaps.ready(init);
