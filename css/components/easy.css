@@ -5,8 +5,8 @@ display: flex;
 flex-direction: row;
 background-color: aliceblue;
 border-radius: 25px;
-width: 500px;
-height: 250px;
+max-width: 500px;
+max-height: 250px;
 
 }
 .easystep {
@@ -14,7 +14,7 @@ height: 250px;
   background-color: rgb(134, 86, 86);
   align-self: center;
   white-space: nowrap;
-padding: 20px;
+  padding: 20px;
   margin: 20px;
   border-radius: 25px;
   text-align: center;
