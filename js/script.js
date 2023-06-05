@@ -77,13 +77,31 @@ myModal.addEventListener('shown.bs.modal', () => {
 // Свайпер насосы
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+
+    slidesPerView: 1,
+    breakpoints: {
+      568: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+    on: {
+      init() {
+        // ...
+      },
+    },
+
+
   spaceBetween: 15,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+
+
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -128,3 +146,32 @@ document.getElementById('tg').addEventListener('submit', function(e) {
   })
 
 })
+
+
+// бургер
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("burger").addEventListener("click", function() {
+    document.querySelector("header").classList.toggle("open")
+  })
+})
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === "Escape") {
+    document.querySelector(".header").classList.remove("open")
+  }
+});
+
+document.getElementById("header__nav").addEventListener('click', event => {
+  event._isClickWithInMenu = true;
+});
+
+document.getElementById("burger").addEventListener('click', event => {
+  event._isClickWithInMenu = true;
+});
+
+document.body.addEventListener('click', event => {
+  if (event._isClickWithInMenu) return;
+  document.querySelector("header").classList.remove("open")
+});
+

@@ -22,1259 +22,1274 @@
 
 <body>
 
-  <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <a class="header__logo" href="#">
-          <img src="/img/betonmix.png" alt="логотип">
-        </a>
+  <div class="body_wraper">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo" href="#">
+            <picture>
+              <source srcset="/img/logo2.png" media="(max-width: 768px)">
+              <img src="/img/betonmix.png" alt="логотип">
+            </picture>
 
-        <div class=" header__nav">
-          <ul class="header__nav__list list-reset">
-            <li class="header__nav__list__item "><a href="#hero" class="header__nav__link">Главная</a></li>
-            <li class="header__nav__list__item "><a href="#beton" class="header__nav__link">Бетон</a></li>
-            <li class="header__nav__list__item "><a href="#nasos" class="header__nav__link">Автобетононасосы</a></li>
-            <li class="header__nav__list__item "><a href="#contacts" class="header__nav__link">Контакты</a></li>
-          </ul>
-        </div>
+          </a>
 
-        <div class="header__contact">
-          <a href="tel:+7(499)322-77-88" class="header__contact__tel btn">
-            +7(499)322-77-88
-          </a>
-          <a href="mailto:buh-betonmix@mail.ru" class="header__contact__mail">
-            buh-betonmix@mail.ru
-          </a>
+          <div class=" header__nav" id="header__nav">
+            <ul class="header__nav__list list-reset">
+              <li class="header__nav__list__item "><a href="#hero" class="header__nav__link">Главная</a></li>
+              <li class="header__nav__list__item "><a href="#beton" class="header__nav__link">Бетон</a></li>
+              <li class="header__nav__list__item "><a href="#nasos" class="header__nav__link">Автобетононасосы</a></li>
+              <li class="header__nav__list__item "><a href="#contacts" class="header__nav__link">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="header__contact">
+            <a href="tel:+7(499)322-77-88" class="header__contact__tel btn">
+              +7(499)322-77-88
+            </a>
+            <a href="mailto:buh-betonmix@mail.ru" class="header__contact__mail">
+              buh-betonmix@mail.ru
+            </a>
+          </div>
+          <button class="header__burger-btn" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
+    <main class="main">
 
-    <section class="hero" id="hero">
-      <div class="hero__wrapper">
+      <section class="hero" id="hero">
+        <div class="hero__wrapper">
+          <div class="container">
+            <div class="hero__content">
+              <div class="hero__left">
+                <h1 class="hero__title section-title">
+                  Заказать Бетон с доставкой в Москве и Московской области
+                </h1>
+
+                <button class="hero__button hvr-icon-fade btn " id="myBtn1"><ya-tr-span data-index="66-0"
+                    data-translated="true" data-source-lang="en" data-target-lang="ru" data-value=" Icon Fade "
+                    data-translation=" Значок исчезает " data-ch="0" data-type="trSpan" data-selected="false"> Заказать
+                    звонок </ya-tr-span><i class="fa fa-check hvr-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="beton" id="beton">
         <div class="container">
-          <div class="hero__content">
-            <div class="hero__left">
-              <h1 class="hero__title section-title">
-                Заказать Бетон с доставкой в Москве и Московской области
-              </h1>
 
-              <button class="hero__button hvr-icon-fade btn " id="myBtn1"><ya-tr-span data-index="66-0"
-                  data-translated="true" data-source-lang="en" data-target-lang="ru" data-value=" Icon Fade "
-                  data-translation=" Значок исчезает " data-ch="0" data-type="trSpan" data-selected="false"> Заказать
-                  звонок </ya-tr-span><i class="fa fa-check hvr-icon"></i>
-              </button>
+          <h1 class="beton__title section-title">Заказать Бетон</h1>
+
+          <div class="tabs">
+            <div class="tabby-tab">
+              <input type="radio" id="tab-1" name="tabby-tabs" checked>
+              <label for="tab-1">Бетон на Гравии</label>
+              <div class="tabby-content">
+
+                <img src="/img/gravy.jpg" />
+                <table class="beton__table">
+                  <tbody class="beton__table__body">
+                    <tr class="beton__tr">
+                      <th class="beton__th">Наименование</th>
+                      <th class="beton__th">Марка</th>
+                      <th class="beton__th">Характеристика</th>
+                      <th class="beton__th">Цена</th>
+                      <th class="beton__th">Заказ</th>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м100</td>
+                      <td class="beton__td">П3 F75 W2</td>
+                      <td class="beton__td">4300.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn " id="myBtn2">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м150</td>
+                      <td class="beton__td">П4 F75 W4</td>
+                      <td class="beton__td">4400.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn3">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м200</td>
+                      <td class="beton__td">П4 F100 W4</td>
+                      <td class="beton__td">4550.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn4">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м250</td>
+                      <td class="beton__td">П3 F150 W4</td>
+                      <td class="beton__td">4600.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn5">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м300</td>
+                      <td class="beton__td">П4 F150 W6</td>
+                      <td class="beton__td">4750.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn6">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м350</td>
+                      <td class="beton__td">П4 F200 W8</td>
+                      <td class="beton__td">4800.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn7">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м400</td>
+                      <td class="beton__td">П4 F300 W10</td>
+                      <td class="beton__td">5000.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn8">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
             </div>
+
+            <div class="tabby-tab">
+              <input type="radio" id="tab-2" name="tabby-tabs">
+              <label for="tab-2">Бетон на Граните</label>
+              <div class="tabby-content">
+                <img src="/img/granit.jpg" />
+                <table class="beton__table">
+                  <tbody class="beton__table__body">
+                    <tr class="beton__tr">
+                      <th class="beton__th">Характеристика</th>
+                      <th class="beton__th">Марка</th>
+                      <th class="beton__th">Характеристика</th>
+                      <th class="beton__th">Цена</th>
+                      <th class="beton__th">Заказ</th>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м100</td>
+                      <td class="beton__td">П3 F75 W2</td>
+                      <td class="beton__td">4900.00 руб.</td>
+                      <td class="beton__td ">
+                        <button class="btn btn-reset beton__btn" id="myBtn9">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м150</td>
+                      <td class="beton__td">П4 F75 W4</td>
+                      <td class="beton__td">5000.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn10">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м200</td>
+                      <td class="beton__td">П4 F100 W4</td>
+                      <td class="beton__td">5100.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn11">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м250</td>
+                      <td class="beton__td">П3 F150 W4</td>
+                      <td class="beton__td">5250.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn12">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м300</td>
+                      <td class="beton__td">П4 F150 W6</td>
+                      <td class="beton__td">5400.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn13">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м350</td>
+                      <td class="beton__td">П4 F200 W8</td>
+                      <td class="beton__td">5550.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn14">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м400</td>
+                      <td class="beton__td">П4 F300 W10</td>
+                      <td class="beton__td">5700.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn15">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м450</td>
+                      <td class="beton__td">П4 F300</td>
+                      <td class="beton__td">5800.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn16">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Бетон</td>
+                      <td class="beton__td">м500</td>
+                      <td class="beton__td">П4 F300</td>
+                      <td class="beton__td">6100.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn17">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tabby-tab">
+              <input type="radio" id="tab-3" name="tabby-tabs">
+              <label for="tab-3">Тощий бетон</label>
+              <div class="tabby-content">
+                <img src="/img/toshy.jpg" />
+                <table class="beton__table">
+                  <tbody class="beton__table__body">
+                    <tr class="beton__tr">
+                      <th class="beton__th">Наименование</th>
+                      <th class="beton__th">Марка</th>
+                      <th class="beton__th">Характеристика</th>
+                      <th class="beton__th">Цена</th>
+                      <th class="beton__th">Заказ</th>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Тощий Бетон</td>
+                      <td class="beton__td">м100</td>
+                      <td class="beton__td">Ж3 F75 W2</td>
+                      <td class="beton__td">3300.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn18">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Тощий Бетон</td>
+                      <td class="beton__td">м150</td>
+                      <td class="beton__td">Ж4 F75 W4</td>
+                      <td class="beton__td">3400.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn19">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Тощий Бетон</td>
+                      <td class="beton__td">м200</td>
+                      <td class="beton__td">Ж4 F100 W4</td>
+                      <td class="beton__td">3500.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn20">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Тощий Бетон</td>
+                      <td class="beton__td">м250</td>
+                      <td class="beton__td">Ж4 F150 W4</td>
+                      <td class="beton__td">3600.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn21">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tabby-tab">
+              <input type="radio" id="tab-4" name="tabby-tabs">
+              <label for="tab-4">Раствор</label>
+              <div class="tabby-content">
+                <img src="/img/rastvor.jpg" />
+                <table class="beton__table">
+                  <tbody class="beton__table__body">
+                    <tr class="beton__tr">
+                      <th class="beton__th"></th>
+                      <th class="beton__th">Марка</th>
+                      <th class="beton__th">Характеристика</th>
+                      <th class="beton__th">Цена</th>
+                      <th class="beton__th">Заказ</th>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Раствор</td>
+                      <td class="beton__td">м100</td>
+                      <td class="beton__td">Пк2/Пк4 F50</td>
+                      <td class="beton__td">3400.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn22">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">раствор</td>
+                      <td class="beton__td">м150</td>
+                      <td class="beton__td">Пк2/Пк4 F75</td>
+                      <td class="beton__td">3500.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn23">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Раствор</td>
+                      <td class="beton__td">м200</td>
+                      <td class="beton__td">Пк2/Пк4 F100</td>
+                      <td class="beton__td">3700.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn24">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="beton__tr">
+                      <td class="beton__td">Раствор</td>
+                      <td class="beton__td">м250</td>
+                      <td class="beton__td">Пк2/Пк4 F150</td>
+                      <td class="beton__td">3850.00 руб.</td>
+                      <td class="beton__td">
+                        <button class="btn btn-reset beton__btn" id="myBtn25">
+                          Заказать
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="beton" id="beton">
-      <div class="container">
-
-        <h1 class="beton__title section-title">Заказать Бетон</h1>
-
-        <div class="tabs">
-          <div class="tabby-tab">
-            <input type="radio" id="tab-1" name="tabby-tabs" checked>
-            <label for="tab-1">Бетон на Гравии</label>
-            <div class="tabby-content">
-
-              <img src="/img/gravy.jpg" />
-              <table class="beton__table">
-                <tbody class="beton__table__body">
-                  <tr class="beton__tr">
-                    <th class="beton__th">Наименование</th>
-                    <th class="beton__th">Марка</th>
-                    <th class="beton__th">Характеристика</th>
-                    <th class="beton__th">Цена</th>
-                    <th class="beton__th">Заказ</th>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м100</td>
-                    <td class="beton__td">П3 F75 W2</td>
-                    <td class="beton__td">4300.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn " id="myBtn2">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м150</td>
-                    <td class="beton__td">П4 F75 W4</td>
-                    <td class="beton__td">4400.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn3">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м200</td>
-                    <td class="beton__td">П4 F100 W4</td>
-                    <td class="beton__td">4550.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn4">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м250</td>
-                    <td class="beton__td">П3 F150 W4</td>
-                    <td class="beton__td">4600.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn5">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м300</td>
-                    <td class="beton__td">П4 F150 W6</td>
-                    <td class="beton__td">4750.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn6">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м350</td>
-                    <td class="beton__td">П4 F200 W8</td>
-                    <td class="beton__td">4800.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn7">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м400</td>
-                    <td class="beton__td">П4 F300 W10</td>
-                    <td class="beton__td">5000.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn8">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </div>
-          </div>
-
-          <div class="tabby-tab">
-            <input type="radio" id="tab-2" name="tabby-tabs">
-            <label for="tab-2">Бетон на Граните</label>
-            <div class="tabby-content">
-              <img src="/img/granit.jpg" />
-              <table class="beton__table">
-                <tbody class="beton__table__body">
-                  <tr class="beton__tr">
-                    <th class="beton__th">Характеристика</th>
-                    <th class="beton__th">Марка</th>
-                    <th class="beton__th">Характеристика</th>
-                    <th class="beton__th">Цена</th>
-                    <th class="beton__th">Заказ</th>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м100</td>
-                    <td class="beton__td">П3 F75 W2</td>
-                    <td class="beton__td">4900.00 руб.</td>
-                    <td class="beton__td ">
-                      <button class="btn btn-reset beton__btn" id="myBtn9">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м150</td>
-                    <td class="beton__td">П4 F75 W4</td>
-                    <td class="beton__td">5000.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn10">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м200</td>
-                    <td class="beton__td">П4 F100 W4</td>
-                    <td class="beton__td">5100.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn11">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м250</td>
-                    <td class="beton__td">П3 F150 W4</td>
-                    <td class="beton__td">5250.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn12">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м300</td>
-                    <td class="beton__td">П4 F150 W6</td>
-                    <td class="beton__td">5400.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn13">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м350</td>
-                    <td class="beton__td">П4 F200 W8</td>
-                    <td class="beton__td">5550.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn14">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м400</td>
-                    <td class="beton__td">П4 F300 W10</td>
-                    <td class="beton__td">5700.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn15">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м450</td>
-                    <td class="beton__td">П4 F300</td>
-                    <td class="beton__td">5800.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn16">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Бетон</td>
-                    <td class="beton__td">м500</td>
-                    <td class="beton__td">П4 F300</td>
-                    <td class="beton__td">6100.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn17">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="tabby-tab">
-            <input type="radio" id="tab-3" name="tabby-tabs">
-            <label for="tab-3">Тощий бетон</label>
-            <div class="tabby-content">
-              <img src="/img/toshy.jpg" />
-              <table class="beton__table">
-                <tbody class="beton__table__body">
-                  <tr class="beton__tr">
-                    <th class="beton__th">Наименование</th>
-                    <th class="beton__th">Марка</th>
-                    <th class="beton__th">Характеристика</th>
-                    <th class="beton__th">Цена</th>
-                    <th class="beton__th">Заказ</th>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Тощий Бетон</td>
-                    <td class="beton__td">м100</td>
-                    <td class="beton__td">Ж3 F75 W2</td>
-                    <td class="beton__td">3300.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn18">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Тощий Бетон</td>
-                    <td class="beton__td">м150</td>
-                    <td class="beton__td">Ж4 F75 W4</td>
-                    <td class="beton__td">3400.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn19">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Тощий Бетон</td>
-                    <td class="beton__td">м200</td>
-                    <td class="beton__td">Ж4 F100 W4</td>
-                    <td class="beton__td">3500.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn20">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Тощий Бетон</td>
-                    <td class="beton__td">м250</td>
-                    <td class="beton__td">Ж4 F150 W4</td>
-                    <td class="beton__td">3600.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn21">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="tabby-tab">
-            <input type="radio" id="tab-4" name="tabby-tabs">
-            <label for="tab-4">Раствор</label>
-            <div class="tabby-content">
-              <img src="/img/rastvor.jpg" />
-              <table class="beton__table">
-                <tbody class="beton__table__body">
-                  <tr class="beton__tr">
-                    <th class="beton__th"></th>
-                    <th class="beton__th">Марка</th>
-                    <th class="beton__th">Характеристика</th>
-                    <th class="beton__th">Цена</th>
-                    <th class="beton__th">Заказ</th>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Раствор</td>
-                    <td class="beton__td">м100</td>
-                    <td class="beton__td">Пк2/Пк4 F50</td>
-                    <td class="beton__td">3400.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn22">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">раствор</td>
-                    <td class="beton__td">м150</td>
-                    <td class="beton__td">Пк2/Пк4 F75</td>
-                    <td class="beton__td">3500.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn23">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Раствор</td>
-                    <td class="beton__td">м200</td>
-                    <td class="beton__td">Пк2/Пк4 F100</td>
-                    <td class="beton__td">3700.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn24">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="beton__tr">
-                    <td class="beton__td">Раствор</td>
-                    <td class="beton__td">м250</td>
-                    <td class="beton__td">Пк2/Пк4 F150</td>
-                    <td class="beton__td">3850.00 руб.</td>
-                    <td class="beton__td">
-                      <button class="btn btn-reset beton__btn" id="myBtn25">
-                        Заказать
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="deliv">
-      <div class="container">
-        <div class="delive__content">
-          <h2 class="delive__title section-title">
-            Доставка Бетона<br> Осуществляется Автобетоносмесителем
-          </h2>
-          <div class="delive__text">
-            <article class="delive__card">
-              <div class="delive__img">
-                <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g>
-                    <g>
-                      <path
-                        d="m395.78 296.751h-15.531c-9.931-.344-9.923-14.659 0-15h15.531c9.931.344 9.924 14.659 0 15z"
-                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                    </g>
-                    <g>
-                      <path
-                        d="m480.556 157.097c-1.021-3.062-3.887-5.128-7.115-5.128h-40.12c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h34.714l5.354 16.064h-93.139c-4.143 0-7.5 3.358-7.5 7.5v62.125c0 3.441 2.342 6.441 5.681 7.276l118.569 29.641v48.774h-21.214c-19.167-41.171-78.736-41.147-97.888 0h-21.208v-171.38h43.939c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-51.439c-4.143 0-7.5 3.358-7.5 7.5v116.75h-16.07v-79.25c0-2.829-1.566-5.292-3.879-6.569l-58.656-56.256c-.766-.767-1.635-1.336-2.607-1.705l-27.389-11.064c-3.841-1.552-8.212.306-9.763 4.145-1.552 3.841.305 8.212 4.146 9.763l20.524 8.291-52.561 130.091-72.493-29.29 52.561-130.093 21.637 8.741c3.845 1.552 8.213-.305 9.764-4.145 1.552-3.84-.305-8.211-4.145-9.763 0 0-29.303-11.806-29.671-11.893-.011-.003-85.343-.492-85.343-.492-3.065-.011-5.832 1.847-6.98 4.69l-3.008 7.446-21.845-8.826c-4.399-1.314-7.654.067-9.764 4.145l-29.09 72.001c-.153.379-16.875 74.833-16.875 74.833-.959 4.276 3.08 9.254 7.487 9.138l29.932-.676c3.376-.076 6.285-2.399 7.106-5.674l12.237-48.818 5.184 4.971v69.747l-43.26 28.833c-2.086 1.391-3.34 3.733-3.34 6.241v23.57h-8.029c-4.143 0-7.5 3.358-7.5 7.5v31.06c0 4.142 3.357 7.5 7.5 7.5h28.717c19.17 41.161 78.727 41.137 97.881 0h26.368c19.17 41.161 78.727 41.137 97.881 0h43.433c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-38.876c.794-5.353.794-10.707.001-16.06h110.438c-.793 5.353-.792 10.707.001 16.06h-38.874c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h43.432c19.17 41.16 78.727 41.138 97.881 0h28.717c4.143 0 7.5-3.358 7.5-7.5v-124.25c0-.808-31.444-95.564-31.444-95.564zm-169.936 119.122h-16.282l16.282-40.308zm-32.452-.018-67.485-.234 49.88-123.458 48.701 46.708zm-117.913-164.22-49.88 123.457-48.706-46.705 27.189-67.294c.02-.05.04-.1.059-.151l3.855-9.542zm-128.706 132.631-14.632.331 14.279-63.708 26.051-64.477 14.891 6.016-26.283 65.046c-.157.389-14.306 56.792-14.306 56.792zm76.259 9.148c.805.811 1.722 1.407 2.75 1.789l51.158 20.67h-84.586v-51.877zm-92.808 115.649v-16.06h16.659c-.793 5.353-.792 10.707.001 16.06zm70.157 31.06c-21.556 0-39.093-17.537-39.093-39.093s17.537-39.093 39.093-39.093c20.928 0 39.094 18.283 39.094 39.093 0 20.677-18.324 39.093-39.094 39.093zm53.499-31.06c.794-5.353.794-10.707.001-16.06h17.251c-.793 5.353-.792 10.707.001 16.06zm70.75 31.06c-21.556 0-39.093-17.537-39.093-39.093s17.537-39.093 39.093-39.093c20.927 0 39.094 18.283 39.094 39.093 0 21.555-17.537 39.093-39.094 39.093zm0-93.187c-21.597 0-40.279 12.723-48.943 31.067h-26.361c-19.167-41.17-78.737-41.148-97.888 0h-5.684v-19.556l41.37-27.574h151.178l44.265 29.786c3.75 2.224 7.22 1.546 10.41-2.036 2.312-3.437 1.401-8.097-2.035-10.41l-25.77-17.34h91.742v47.13h-83.34c-8.665-18.344-27.346-31.067-48.944-31.067zm178.343-60.48v-48.769h90.639l18.612 55.843v20.238zm39.094 153.667c-20.923 0-39.094-18.284-39.094-39.093 0-20.68 18.317-39.093 39.094-39.093 21.556 0 39.093 17.537 39.093 39.093s-17.538 39.093-39.093 39.093zm70.157-31.06h-16.66c.794-5.353.794-10.707.001-16.06h16.659z"
-                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                      <path
-                        d="m85.157 338.344c-12.699 0-23.03 10.332-23.03 23.031 1.157 30.513 44.908 30.503 46.062 0-.001-12.699-10.333-23.031-23.032-23.031zm0 31.063c-4.428 0-8.03-3.603-8.03-8.031.377-10.63 15.686-10.626 16.062 0-.001 4.428-3.603 8.031-8.032 8.031z"
-                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                      <path
-                        d="m209.406 338.344c-12.699 0-23.03 10.332-23.03 23.031 1.157 30.513 44.908 30.503 46.062 0 0-12.699-10.333-23.031-23.032-23.031zm0 31.063c-4.428 0-8.03-3.603-8.03-8.031.377-10.63 15.686-10.626 16.062 0 0 4.428-3.603 8.031-8.032 8.031z"
-                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                      <path
-                        d="m426.843 338.344c-12.699 0-23.031 10.332-23.031 23.031 1.158 30.512 44.909 30.504 46.062 0-.001-12.699-10.332-23.031-23.031-23.031zm0 31.063c-4.429 0-8.031-3.603-8.031-8.031.377-10.629 15.686-10.627 16.062 0-.001 4.428-3.603 8.031-8.031 8.031z"
-                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
-              <p class="delive__p">
-                Автобетоносмеситель – это техника для перемещения и смешивания бетона на стройплощадке.
-                Автобетоносмеситель
-                удобен тем, что позволяет смешивать бетон прямо на месте, где он нужен. Благодаря этому удобству
-                экономится
-                время и сокращаются затраты на перевозку бетонной смеси.
-              </p>
-
-            </article>
-
-            <article class="delive__card">
-              <div class="delive__img">
-                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="m474.835938 190.613281-24.96875-4.234375c-2.222657-6.1875-4.734376-12.257812-7.511719-18.160156l14.703125-20.570312c12.792968-17.972657 10.738281-42.246094-4.835938-57.667969l-30.003906-30.007813c-8.480469-8.480468-19.722656-13.152344-31.652344-13.152344-9.394531 0-18.378906 2.894532-25.917968 8.320313l-20.648438 14.707031c-6.386719-3.019531-12.867188-5.6875-19.390625-7.992187l-4.128906-24.464844c-3.632813-21.667969-22.21875-37.390625-44.195313-37.390625h-42.390625c-21.972656 0-40.558593 15.722656-44.183593 37.347656l-4.339844 25.421875c-6.128906 2.238281-12.171875 4.78125-18.089844 7.621094l-20.273438-14.601563c-7.601562-5.472656-16.621093-8.363281-26.085937-8.363281-12.046875 0-23.292969 4.679688-31.679687 13.179688l-30.074219 29.976562c-15.53125 15.53125-17.566407 39.785157-4.835938 57.667969l14.941407 20.992188c-2.753907 5.925781-5.230469 12.023437-7.417969 18.246093l-24.46875 4.128907c-21.664063 3.636718-37.386719 22.222656-37.386719 44.195312v42.390625c0 21.972656 15.722656 40.558594 37.347656 44.1875l25.421875 4.335937c2.238281 6.132813 4.785157 12.179688 7.621094 18.09375l-14.546875 20.234376c-12.792969 17.972656-10.738281 42.25 4.835938 57.667968l30.003906 30.007813c8.480468 8.480469 19.722656 13.152343 31.652344 13.152343 9.394531 0 18.378906-2.894531 25.914062-8.316406l20.992188-14.941406c5.515624 2.5625 11.234374 4.910156 17.105468 7.023438l4.160156 24.964843c3.636719 21.664063 22.222657 37.386719 44.195313 37.386719h42.488281c21.972656 0 40.5625-15.722656 44.191406-37.359375l4.234376-24.972656c6.1875-2.222657 12.257812-4.734375 18.160156-7.511719l20.503906 14.65625c7.601562 5.472656 16.621094 8.367188 26.085938 8.367188 11.925781 0 23.167968-4.671876 31.648437-13.152344l30.003906-30.007813c15.535157-15.53125 17.566407-39.785156 4.835938-57.667969l-14.71875-20.667968c2.851562-6.039063 5.371093-12.105469 7.539062-18.136719l24.933594-4.15625c21.664063-3.636719 37.386719-22.222656 37.386719-44.195313v-42.304687c.246094-21.996094-15.363282-40.605469-37.160156-44.277344zm7.160156 86.582031c0 7.261719-5.195313 13.40625-12.335938 14.605469l-33.070312 5.511719c-6.101563 1.015625-11.023438 5.320312-12.855469 11.238281-2.9375 9.519531-6.972656 19.25-11.984375 28.90625-2.835938 5.445313-2.382812 11.933594 1.179688 16.925781l19.488281 27.367188c4.203125 5.90625 3.527343 13.921875-1.609375 19.058594l-30.003906 30.003906c-2.855469 2.855469-6.464844 4.367188-10.4375 4.367188-3.132813 0-6.089844-.9375-8.597657-2.742188l-27.25-19.476562c-5.011719-3.597657-11.527343-4.050782-17-1.1875-9.164062 4.796874-18.902343 8.832031-28.945312 11.984374-5.859375 1.835938-10.136719 6.742188-11.15625 12.78125l-5.617188 33.105469c-1.199219 7.160157-7.34375 12.355469-14.609375 12.355469h-42.488281c-7.265625 0-13.40625-5.195312-14.605469-12.335938l-5.511718-33.070312c-1.007813-6.0625-5.273438-10.976562-11.132813-12.828125-9.898437-3.125-19.324219-7-28.023437-11.519531-2.371094-1.230469-4.9375-1.835938-7.492188-1.835938-3.304688 0-6.59375 1.015625-9.410156 3.019532l-27.738282 19.742187c-2.5 1.800781-5.34375 2.710937-8.453124 2.710937-3.972657 0-7.582032-1.507812-10.4375-4.367187l-30.058594-30.054687c-5.128906-5.078126-5.78125-13.070313-1.597656-18.949219l19.371093-26.945313c3.644531-5.058594 4.089844-11.621094 1.152344-17.140625-4.925781-9.238281-9.007813-18.925781-12.136719-28.796875-1.851562-5.820312-6.738281-10.074218-12.753906-11.101562l-33.523438-5.714844c-7.15625-1.203125-12.351562-7.347656-12.351562-14.609375v-42.390625c0-7.261719 5.195312-13.40625 12.363281-14.609375l32.664063-5.511719c6.105468-1.027344 11.023437-5.34375 12.839844-11.28125 3.082031-10.085937 7.046874-19.839844 11.785156-28.980468 2.820312-5.433594 2.367187-11.90625-1.183594-16.902344l-19.695312-27.671875c-4.207032-5.90625-3.53125-13.921875 1.589843-19.042969l30.105469-30.003906.109375-.113282c2.707031-2.753906 6.378906-4.269531 10.34375-4.269531 3.132813 0 6.09375.9375 8.554687 2.710938l27.0625 19.480469c5.066407 3.648437 11.636719 4.085937 17.136719 1.148437 9.238281-4.925781 18.925781-9.007813 28.785157-12.132813 5.820312-1.847656 10.074218-6.726562 11.109374-12.757812l5.71875-33.523438c1.199219-7.15625 7.34375-12.351562 14.609376-12.351562h42.390624c7.261719 0 13.40625 5.195312 14.609376 12.363281l5.511718 32.675781c1.03125 6.109376 5.355469 11.023438 11.296875 12.835938 10.128907 3.078125 20.230469 7.234375 30.03125 12.359375 5.445313 2.84375 11.933594 2.398437 16.949219-1.167969l27.429688-19.535156c2.496093-1.800781 5.339843-2.710938 8.453124-2.710938 3.96875 0 7.578126 1.507813 10.4375 4.367188l30.054688 30.054688c5.128906 5.078124 5.785156 13.070312 1.574219 18.980468l-19.496094 27.277344c-3.578125 5.015625-4.023437 11.523438-1.167969 16.976562 4.800782 9.164063 8.832032 18.902344 11.988282 28.949219 1.839843 5.859375 6.742187 10.132813 12.78125 11.152344l33.078124 5.613281.027344.003906c7.136719 1.199219 12.25 7.253907 12.148438 14.398438zm0 0"
-                    fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                  <path
-                    d="m256 156.453125c-54.890625 0-99.546875 44.65625-99.546875 99.546875s44.65625 99.546875 99.546875 99.546875 99.546875-44.65625 99.546875-99.546875-44.65625-99.546875-99.546875-99.546875zm0 169.09375c-38.347656 0-69.546875-31.199219-69.546875-69.546875s31.199219-69.546875 69.546875-69.546875 69.546875 31.199219 69.546875 69.546875-31.199219 69.546875-69.546875 69.546875zm0 0"
-                    fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                </svg>
-              </div>
-              <p class="delive__p">
-                В состав автобетоносмесителя входят различные компоненты: во-первых, это сам бак, в котором происходит
-                смешивание компонентов, во-вторых, это шасси, на котором устанавливается бак, а также двигатель,
-                используемый для привода вращения барабана, и некоторое количество систем и механизмов, обеспечивающих
-                управление и контроль.
-              </p>
-
-            </article>
-
-            <article class="delive__card">
-              <div class="delive__img">
-                <svg id="Capa_1" enable-background="new 0 0 511.543 511.543" viewBox="0 0 511.543 511.543"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g>
-                    <path
-                      d="m10 275.733c-5.522 0-10 4.477-10 10s4.478 10 10 10h81.536v.04c0 18.431 14.995 33.426 33.426 33.426h41.593c18.431 0 33.425-14.995 33.425-33.426v-21.486c50.802 5.036 90.615 48.014 90.615 100.119v66.81c0 28.221 22.96 51.181 51.181 51.181s51.181-22.96 51.181-51.181v-6.524c0-10.111 8.227-18.338 18.339-18.338h2.579c21.14 0 38.339-17.199 38.339-38.338 0-10.112 8.227-18.338 18.338-18.338h2.654c21.14 0 38.338-17.198 38.338-38.338v-30.867c0-26.092-5.181-51.395-15.399-75.206-2.178-5.076-8.059-7.425-13.133-5.246-5.075 2.178-7.424 8.058-5.246 13.133 9.143 21.305 13.778 43.955 13.778 67.319v30.867c0 10.111-8.227 18.338-18.338 18.338h-2.654c-21.14 0-38.338 17.199-38.338 38.338 0 10.112-8.227 18.338-18.339 18.338h-2.579c-21.14 0-38.339 17.198-38.339 38.338v6.524c0 17.193-13.987 31.181-31.181 31.181s-31.181-13.988-31.181-31.181v-66.81c0-63.142-48.766-115.107-110.615-120.204v-29.342h24.154c72.856 0 132.129 59.272 132.129 132.128 0 5.523 4.478 10 10 10s10-4.477 10-10c0-83.884-68.245-152.128-152.129-152.128h-24.154v-31.066h40.695c5.522 0 10-4.477 10-10s-4.478-10-10-10h-40.695v-34.207h120.68c38.949 0 77.06 13.461 107.309 37.903 4.296 3.47 10.593 2.804 14.063-1.494 3.471-4.295 2.803-10.592-1.493-14.063-33.796-27.308-76.37-42.347-119.879-42.347h-120.68v-47.014c0-18.431-14.994-33.426-33.425-33.426h-41.593c-18.431 0-33.426 14.995-33.426 33.426v.04h-81.536c-5.522 0-10 4.477-10 10s4.478 10 10 10h81.536v203.122h-81.536zm101.536-223.161c0-7.403 6.022-13.426 13.426-13.426h41.593c7.402 0 13.425 6.023 13.425 13.426v243.201c0 7.403-6.022 13.426-13.425 13.426h-41.593c-7.403 0-13.426-6.023-13.426-13.426z"
-                      fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                    <path
-                      d="m431.624 315.337c5.522 0 10-4.477 10-10v-1.383c0-82.798-67.361-150.16-150.159-150.16-5.522 0-10 4.477-10 10s4.478 10 10 10c71.77 0 130.159 58.389 130.159 130.16v1.383c0 5.523 4.478 10 10 10z"
-                      fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                    <path
-                      d="m468.741 172.102c-3.939-1.614-8.611-.541-11.398 2.7-2.726 3.17-3.182 7.818-1.123 11.455 2.099 3.708 6.462 5.727 10.651 4.885 4.087-.822 7.324-4.217 7.935-8.343.664-4.486-1.89-8.957-6.065-10.697z"
-                      fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                  </g>
-                </svg>
-              </div>
-              <p class="delive__p">
-                Принцип работы автобетоносмесителя достаточно прост: компоненты бетонной смеси загружаются в бак, затем
-                бак
-                начинает вращаться вокруг своей оси, чтобы обеспечить равномерное распределение составляющих. После
-                этого
-                бетон можно выгрузить на строительную площадку и использовать для нужд проекта.
-              </p>
-            </article>
-
-            <article class="delive__card">
-              <div class="delive__img">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496"
-                  style="enable-background:new 0 0 496 496;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path
-                        d="M488.112,219.96L486.76,212h-56.216l1.792,10.616c3.744,22.472,6.12,45.776,7.08,69.384H408v-80c0-13.232-10.768-24-24-24 h-16c-4.416,0-8-3.592-8-8v-16c0-13.232-10.768-24-24-24h-64v-24h96V68H128v48h96v24h-54.112c-9.152,0-17.376,5.08-21.472,13.264 l-7.16,14.312c-1.36,2.728-4.096,4.424-7.144,4.424H96c-13.232,0-24,10.768-24,24v56H48v-64H0v176h48v-64h24v64 c0,13.232,10.768,24,24,24h41.376c2.104,0,4.168,0.856,5.656,2.344l30.624,30.624c4.528,4.536,10.56,7.032,16.968,7.032H384 c13.232,0,24-10.768,24-24v-64h31.408c-0.808,18.664-2.504,37.168-5.08,55.112L430.776,420h56.168l3.232-22.624 c3.864-27.08,5.824-54.68,5.824-82.032C496,283.48,493.344,251.392,488.112,219.96z M72,284H32v64H16V204h16v64h40V284z M144,100 V84h208v16h-96v40h-16v-40H144z M120,372H96c-4.416,0-8-3.592-8-8V196c0-4.408,3.584-8,8-8h24v40h32c4.416,0,8,3.592,8,8v80 c0,4.408-3.584,8-8,8h-32V372z M200,412h-9.376c-2.104,0-4.16-0.856-5.656-2.344l-30.624-30.624 c-4.528-4.536-10.56-7.032-16.968-7.032H136v-32h16c13.232,0,24-10.768,24-24v-80c0-13.232-10.768-24-24-24h-16v-24.128 c8.376-0.648,15.768-5.52,19.576-13.136l7.16-14.312c1.368-2.728,4.104-4.424,7.152-4.424H200V412z M264,412h-16v-32h-16v32h-16 v-88h16v40h16v-40h16V412z M296,412h-16v-88h16V412z M328,412h-16v-88h16V412z M392,404c0,4.408-3.584,8-8,8h-8v-56h-16v56h-16 v-88h16v16h16v-16h16V404z M392,308H216v-16h176V308z M280,276v-32h48v32H280z M392,276h-48v-48h-80v48h-48v-72h112v-16H216v-32 h120c4.416,0,8,3.592,8,8v16c0,13.232,10.768,24,24,24h16c4.416,0,8,3.592,8,8V276z M474.328,395.112L473.064,404h-23.832 l0.944-6.624c3.024-21.168,4.88-43.088,5.528-65.144l0.232-8.232H408v-16h47.896l-0.216-8.216 c-0.648-24.352-2.768-48.456-6.296-71.784H473.2c4.512,28.824,6.8,58.176,6.8,87.344C480,341.944,478.096,368.784,474.328,395.112 z"
-                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <rect x="120" y="268" width="16" height="16" fill="#000000" style="fill: rgb(135, 42, 24);">
-                      </rect>
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <rect x="232" y="244" width="16" height="16" fill="#000000" style="fill: rgb(135, 42, 24);">
-                      </rect>
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <rect x="360" y="244" width="16" height="16" fill="#000000" style="fill: rgb(135, 42, 24);">
-                      </rect>
-                    </g>
-                  </g>
-                </svg>
-              </div>
-              <p class="delive__p">
-                Существует большой выбор автобетоносмесителей, различающихся по размеру, мощности, марке и серии. Выбор
-                определенной модели зависит от многих факторов, таких как объем загрузки, длина перевозимых дистанций,
-                требования проекта и прочие.
-              </p>
-
-            </article>
-
-
-          </div>
-
-
-        </div>
-      </div>
-
-    </section>
-
-    <section class="delive__price">
-      <div class="container">
-        <h2 class="delive__price__title section-title">
-          Стоимость доставки Бетона
-        </h2>
-        <h3 class="delive__price__title2">
-          Доставка бетона на дальние расстояния не влияет на его характеристики.<br>
-          Бетон до объекта доставляется спецтранспортом,<br>
-          что обеспечивает необходимые для него свойства.
-        </h3>
-        <div class="delive__price__content">
-
-          <div class="delive__price__table">
-            <table class="redTable">
-              <thead>
-                <tr>
-                  <th>Расстояние</th>
-                  <th>Цена за 1м3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>до 5 км</td>
-                  <td>350 руб.</td>
-                </tr>
-                <tr>
-                  <td>до 10 км</td>
-                  <td>400 руб.</td>
-                </tr>
-                <tr>
-                  <td>до 15 км</td>
-                  <td>450 руб.</td>
-                </tr>
-                <tr>
-                  <td>до 20 км</td>
-                  <td>500 руб.</td>
-                </tr>
-                <tr>
-                  <td>до 25 км</td>
-                  <td>550 руб.</td>
-                </tr>
-                <tr>
-                  <td>до 30 км</td>
-                  <td>600 руб.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="delive__price__img">
-            <img src="/img/987232.png" alt="путь">
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-    <section class="map">
-      <div class="container">
-        <h2 class="map__title section-title">
-          Наши Адреса
-        </h2>
-
-        <div class="map__content">
-          <div id="map" class="map__map"></div>
-
-          <div class="map__adress">
-            <h2 class="map__adress__title title__adress">Адрес Офиса:</h2>
-            <p class="map__adress__text">
-              3-й угрешский проезд д.6 стр.1
-            </p>
-            <h2 class="map__adress__title">Бетонный завод №1:</h2>
-            <p class="map__adress__text">
-              Южнопортовая улица 28А стр.15
-            </p>
-            <h2 class="map__adress__title">Бетонный завод №2:</h2>
-            <p class="map__adress__text">
-              Нагорная д.10
-            </p>
-            <h2 class="map__adress__title">Бетонный завод №3:</h2>
-            <p class="map__adress__text">
-              Вилюйская д.10
-            </p>
-            <h2 class="map__adress__title">Бетонный завод №4:</h2>
-            <p class="map__adress__text">
-              Маршала Прошлякова д.28
-            </p>
-          </div>
-
-
-        </div>
-
-
-
-
-      </div>
-    </section>
-
-    <section class="advantage">
-      <div class="container">
-        <h2 class="advantage__title section-title">Наши преимущества</h2>
-        <h3 class="advantage__title2">Обращаясь в нашу компанию,<br> Вы всегда будете уверены в том,<br>Что сделали
-          правильный
-          выбор.</h3>
-        <div class="advantage__content">
-          <div class="advantage__card">
-            <div class="advantage__card__img">
-              <!-- icon666.com - MILLIONS vector ICONS FREE --><svg id="Object" viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="m16 1a15 15 0 1 0 15 15 15 15 0 0 0 -15-15zm0 26a11 11 0 1 1 11-11 11 11 0 0 1 -11 11z" />
-                <path
-                  d="m16 7a9 9 0 1 0 9 9 9 9 0 0 0 -9-9zm5 11h-6a1 1 0 0 1 -1-1v-4a1 1 0 0 1 2 0v3h5a1 1 0 0 1 0 2z" />
-              </svg>
-            </div>
-            <h3 class="advantage__card__title">
-              Быстро
-            </h3>
-            <p class="advantage__card__text">
-              Мы доставляем Бетон уже в день обращения в нашу компанию.
-            </p>
-          </div>
-          <div class="advantage__card">
-            <div class="advantage__card__img">
-              <!-- icon666.com - MILLIONS vector ICONS FREE --><svg id="Capa_1" enable-background="new 0 0 512 512"
-                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path
-                    d="m100.119 132.51h1.014c7.729 0 14.017-6.288 14.017-14.017v-8.544c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v7.561c-4.236 0-7.53 3.408-7.53 7.5-.001 4.142 3.357 7.5 7.499 7.5z" />
-                  <path
-                    d="m469.862 179.592-15.147-3.787c-.53-2.106-1.753-4.029-3.562-5.41-3.276-2.503-7.761-2.688-11.228-.486-1.099-1.518-1.718-3.367-1.718-5.313v-5.424c9.839-8.088 16.409-20.062 17.276-33.638.714-11.187 2.837-44.463 3.538-55.445.586-9.19-2.691-18.313-8.992-25.03-6.301-6.716-15.197-10.568-24.407-10.568h-35.01c-9.209 0-18.105 3.852-24.407 10.568-6.301 6.716-9.579 15.839-8.993 25.03.702 11.006 2.826 44.284 3.538 55.445.866 13.577 7.436 25.55 17.276 33.638v5.424c0 1.946-.62 3.795-1.718 5.313-3.468-2.203-7.953-2.016-11.228.487-1.809 1.382-3.032 3.305-3.562 5.41l-15.147 3.787c-10.613 2.653-19.484 9.814-24.408 19.358l-14.745-3.686c-.273-.309 1.413 1.399-8.797-8.82-1.194-1.191-2.685-1.952-4.261-2.247-.321-1.213-.485-2.47-.485-3.746v-8.452c13.126-10.376 21.933-26.052 23.071-43.883.557-8.725 1.361-21.334 3.785-59.324 1.138-18.2-5.179-35.295-17.412-48.333-12.2-13.003-29.379-20.46-47.132-20.46-18.059 0-34.81 7.253-47.166 20.423s-18.527 30.348-17.377 48.368c.309 4.841.88 13.802 1.146 17.958.264 4.133 3.828 7.275 7.962 7.007 4.134-.264 7.271-3.828 7.007-7.962l-.257-4.029c3.364-12.478 14.575-21.103 27.616-21.103 6.049 0 11.813 1.858 16.67 5.376 2.624 1.9 6.172 1.899 8.797-.001 4.856-3.517 10.62-5.375 16.669-5.375 13.04 0 24.251 8.627 27.616 21.107l-2.896 45.392c-1.537 24.09-21.65 42.96-45.789 42.96s-44.252-18.87-45.789-42.96l-.335-5.253c-.265-4.134-3.836-7.272-7.963-7.006-4.134.264-7.271 3.829-7.007 7.963l.335 5.251c1.138 17.844 9.958 33.53 23.1 43.906v8.429c0 1.275-.164 2.532-.485 3.744-1.578.296-3.072 1.059-4.268 2.255l-8.443 8.443c-.12.12-.236.244-.347.37l-14.751 3.687c-4.934-9.535-13.844-16.719-24.404-19.359l-15.146-3.787c-.53-2.106-1.754-4.029-3.562-5.412-3.276-2.502-7.761-2.688-11.228-.486-1.099-1.518-1.718-3.367-1.718-5.313v-5.424c9.84-8.088 16.41-20.062 17.276-33.638.726-11.373 1.322-20.714 2.423-37.977.887-13.902-3.874-27.154-13.406-37.313s-22.454-15.754-36.384-15.754-26.851 5.596-36.383 15.756c-9.532 10.159-14.292 23.41-13.405 37.312.275 4.315 2.14 33.549 2.423 37.977.866 13.577 7.437 25.55 17.276 33.638v5.424c0 1.946-.62 3.795-1.718 5.313-3.468-2.203-7.953-2.016-11.228.487-1.809 1.382-3.033 3.305-3.562 5.41l-15.146 3.787c-16.832 4.208-28.588 19.264-28.588 36.614v65.622c0 4.759 3.872 8.63 8.63 8.63h115.685v46.865c0 4.808 3.911 8.719 8.719 8.719h17.926l3.165 5.275c-1.597 3.311-3.008 6.715-4.22 10.179l-19.363 4.841c-3.666.922-6.226 4.205-6.226 7.984v39.087c0 3.779 2.56 7.062 6.236 7.987l19.353 4.838c1.212 3.465 2.624 6.869 4.22 10.179l-10.267 17.111c-1.944 3.242-1.437 7.375 1.239 10.057l27.644 27.644c2.681 2.677 6.819 3.178 10.051 1.232l17.11-10.266c3.308 1.596 6.711 3.006 10.179 4.22l4.838 19.354c.918 3.672 4.202 6.236 7.986 6.236h39.087c3.785 0 7.069-2.564 7.987-6.236l4.838-19.353c3.466-1.213 6.87-2.624 10.18-4.221l17.094 10.256c3.244 1.956 7.384 1.455 10.073-1.228l27.644-27.645c2.667-2.673 3.176-6.802 1.233-10.052l-10.266-17.11c1.597-3.311 3.008-6.715 4.22-10.179l19.363-4.841c3.666-.922 6.226-4.205 6.226-7.984v-39.087c0-3.779-2.56-7.062-6.226-7.984l-.01-.003-19.353-4.838c-1.212-3.465-2.624-6.868-4.22-10.179l3.165-5.275h17.926c4.808 0 8.719-3.911 8.719-8.719v-46.865h115.683c4.759 0 8.63-3.871 8.63-8.63v-65.622c-.001-17.349-11.757-32.404-28.588-36.612zm-192.807-133.93c-7.468 0-14.659 1.862-21.068 5.424-6.41-3.562-13.602-5.424-21.069-5.424-10.493 0-20.209 3.667-27.799 9.927 1.692-9.252 6.005-17.83 12.641-24.903 9.49-10.116 22.356-15.686 36.227-15.686 13.826 0 26.68 5.584 36.193 15.723 6.631 7.067 10.948 15.627 12.654 24.852-7.588-6.252-17.296-9.913-27.779-9.913zm137.366 174.574h-12.611v-8.573l6.306-3.153 6.306 3.153v8.573zm-21.219-21.04c-.101.05-8.507 4.254-8.317 4.159l-4.159-12.477zm29.827 0 12.476-8.317-4.159 12.477c-.111-.056-8.825-4.414-8.317-4.16zm-45.886-143.877c3.528-3.76 8.312-5.831 13.468-5.831h35.01c5.157 0 9.94 2.071 13.468 5.832 3.528 3.76 5.29 8.665 4.961 13.812l-1.168 18.304c-3.369-2.315-6.523-4.937-9.429-7.845l-5.251-5.251c-1.407-1.406-3.314-2.196-5.303-2.196h-29.565c-1.989 0-3.896.79-5.303 2.196l-5.253 5.252c-2.906 2.907-6.06 5.528-9.428 7.843l-1.168-18.303c-.33-5.147 1.433-10.052 4.961-13.813zm-2.716 49.015c13.111-7.094 20.037-15.429 22.012-17.191h23.353l3.054 3.054c5.616 5.617 11.984 10.364 18.958 14.137l-1.292 20.243c-1.088 17.045-15.318 30.396-32.397 30.396s-31.31-13.352-32.397-30.396zm48.948 63.113c.464 3.917 1.876 7.607 4.061 10.784l-19.32 12.88-19.32-12.88c2.185-3.177 3.596-6.867 4.06-10.784 9.636 3.289 20.413 3.449 30.519 0zm-202.677 33.094 24.35 12.175-7.799 11.697-17.324-23.099zm41.632 32.28v1.422h-12.659v-1.421l6.33-9.494zm-13.654 16.421h14.649l3.784 26.488h-22.217zm26.077-24.829-7.799-11.697 24.35-12.175.773.773zm3.922-43.691c.027 2.97.493 5.888 1.376 8.675l-24.05 12.025-24.05-12.025c.881-2.783 1.348-5.697 1.376-8.663 14.377 5.797 30.686 5.909 45.348-.012zm-189.704 18.474c-.101.05-8.507 4.254-8.317 4.159l-4.158-12.476zm8.608 36.04h12.611v40.222h-12.611zm12.611-15h-12.611v-8.573l6.306-3.153 6.306 3.153v8.573zm8.608-21.04 12.476-8.317-4.159 12.477c-.175-.088-8.798-4.4-8.317-4.16zm-14.913-149.708c9.743 0 18.779 3.913 25.445 11.018 5.026 5.356 8.154 11.941 9.124 19.024-4.239-4.641-10.3-7.386-16.721-7.386h-37.085c-5.689 0-10.998 2.084-15.061 5.716 1.206-6.446 4.225-12.421 8.853-17.354 6.666-7.105 15.702-11.018 25.445-11.018zm-33.56 56.869 7.498-14.996c1.301-2.602 3.916-4.218 6.825-4.218h37.084c2.733 0 5.271 1.474 6.626 3.847l9.054 15.862-1.131 17.725c-1.087 17.045-15.318 30.396-32.397 30.396s-31.309-13.352-32.397-30.396zm48.819 61.09c.464 3.917 1.876 7.607 4.061 10.784l-19.32 12.88-19.32-12.88c2.185-3.177 3.596-6.867 4.06-10.784 9.636 3.289 20.413 3.449 30.519 0zm-90.593 48.759c0-10.454 7.083-19.526 17.226-22.062l14.765-3.691 8.617 25.85c.688 2.062 2.236 3.725 4.245 4.557 1.964.815 4.24.773 6.224-.221l2.951-1.476v56.295h-26.417v-30.73c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v30.73h-12.611zm96.639 59.252v-56.295l2.952 1.476c1.912.957 4.186 1.066 6.224.221 2.009-.832 3.558-2.494 4.245-4.557l8.617-25.85 14.765 3.691c5.18 1.295 9.701 4.404 12.807 8.615l-.658.165c-21.358 5.341-36.275 24.447-36.275 46.462v26.072zm27.676-26.072c0-15.12 10.245-28.241 24.914-31.909l29.908-7.477 23.921 31.894c.71.946 1.62 1.696 2.648 2.209l-5.17 36.188c-.261.526-.47 1.086-.617 1.675l-4.839 19.354c-3.465 1.212-6.868 2.623-10.179 4.221l-17.114-10.269c-2.957-1.772-6.648-1.505-9.3.573-1.271-.99-2.869-1.58-4.605-1.58-4.142 0-7.5 3.357-7.5 7.5v6.099l-16.292 16.292c-1.854 1.857-2.665 4.415-2.34 6.887h-3.437v-81.657zm206.269 130.219v28.519l-17.842 4.461c-2.789.691-5.043 2.829-5.885 5.581-1.544 5.051-3.588 9.982-6.077 14.655-1.35 2.536-1.271 5.641.207 8.1l9.473 15.788-20.167 20.166-15.781-9.469c-2.463-1.481-5.569-1.561-8.105-.21-4.673 2.487-9.604 4.532-14.646 6.073-2.747.835-4.888 3.083-5.588 5.874l-4.464 17.857h-28.519l-4.466-17.863c-.699-2.784-2.839-5.032-5.575-5.864-5.054-1.544-9.985-3.589-14.657-6.076-2.54-1.352-5.647-1.271-8.099.206l-15.789 9.473-20.166-20.166 9.472-15.786c1.478-2.461 1.558-5.565.208-8.101-2.488-4.674-4.533-9.605-6.077-14.659-.841-2.748-3.094-4.885-5.871-5.575l-17.855-4.464v-28.519l17.846-4.462c2.787-.692 5.04-2.829 5.881-5.58 1.544-5.051 3.588-9.982 6.077-14.655 1.347-2.53 1.27-5.63-.207-8.1l-7.224-12.04c-.031-.052-.062-.104-.094-.156l-2.155-3.592 20.166-20.166 15.797 9.479c2.462 1.473 5.564 1.549 8.09.201 4.672-2.488 9.603-4.532 14.667-6.08 2.739-.842 4.872-3.091 5.566-5.868l4.464-17.855h28.519l4.464 17.855c.694 2.775 2.825 5.024 5.578 5.872 5.054 1.544 9.984 3.588 14.656 6.076 2.528 1.347 5.625 1.27 8.099-.206l15.788-9.474 20.166 20.166c-2.225 3.709-2.179 3.63-2.241 3.734l-7.238 12.063c-1.47 2.46-1.547 5.56-.2 8.089 2.488 4.674 4.533 9.605 6.077 14.659.841 2.749 3.096 4.887 5.872 5.575zm0-48.563h-3.438c.325-2.474-.487-5.032-2.344-6.893l-16.287-16.286v-6.099c0-4.143-3.358-7.5-7.5-7.5-1.736 0-3.334.59-4.605 1.58-2.657-2.082-6.348-2.344-9.304-.572l-17.109 10.267c-3.312-1.598-6.717-3.01-10.18-4.221l-4.838-19.354c-.147-.59-.356-1.151-.618-1.678l-5.169-36.185c1.028-.513 1.939-1.264 2.649-2.21l23.921-31.891c4.947 1.237 15.113 3.778 29.909 7.477 14.669 3.667 24.914 16.788 24.914 31.909v81.656zm-21.276-128.118-.666-.167c3.098-4.21 7.608-7.312 12.815-8.613l14.765-3.691 8.616 25.85c1.449 4.346 6.414 6.366 10.469 4.336l2.952-1.476v56.295h-12.674v-26.072c-.001-22.017-14.918-41.122-36.277-46.462zm145.59 72.534h-12.611v-30.73c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v30.73h-26.417v-2.906c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v2.906h-12.611v-40.222h12.611v2.315c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-18.389l2.952 1.476c1.9.951 4.175 1.071 6.224.221 2.009-.832 3.558-2.494 4.245-4.557l8.616-25.85 14.765 3.691c10.142 2.535 17.226 11.607 17.226 22.062z" />
-                  <path
-                    d="m404.35 132.51h1.014c7.729 0 14.017-6.288 14.017-14.017v-8.544c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v7.561c-4.236 0-7.53 3.408-7.53 7.5-.001 4.142 3.357 7.5 7.499 7.5z" />
-                  <path
-                    d="m252.528 135.087c8.653 0 15.692-7.04 15.692-15.692v-10.741c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v10.741c0 .382-.311.692-.692.692h-1.275c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5z" />
-                  <path
-                    d="m256.001 331.048c-34.638 0-62.817 28.18-62.817 62.817 0 15.877 5.938 31.033 16.722 42.677 2.813 3.037 7.559 3.22 10.599.406 3.039-2.815 3.221-7.561.406-10.6-8.207-8.861-12.727-20.397-12.727-32.483 0-26.366 21.451-47.817 47.817-47.817s47.817 21.451 47.817 47.817-21.451 47.817-47.817 47.817c-3.333 0-6.662-.345-9.893-1.023-4.052-.849-8.03 1.744-8.882 5.798s1.744 8.03 5.797 8.882c4.244.892 8.61 1.344 12.978 1.344 34.638 0 62.817-28.18 62.817-62.817s-28.18-62.818-62.817-62.818z" />
-                  <path
-                    d="m251.111 416.033c1.989 0 3.897-.79 5.303-2.196l29.336-29.337c2.929-2.93 2.929-7.678 0-10.607-2.929-2.928-7.678-2.928-10.606 0l-24.033 24.034-14.254-14.255c-2.929-2.928-7.678-2.928-10.606 0-2.929 2.93-2.929 7.678 0 10.607l19.558 19.558c1.405 1.406 3.313 2.196 5.302 2.196z" />
-                </g>
-              </svg>
-            </div>
-            <h3 class="advantage__card__title">
-              Профессионально
-            </h3>
-            <p class="advantage__card__text">
-              Опытные водители схватывают все на лету и работают быстро.
-            </p>
-          </div>
-          <div class="advantage__card">
-            <div class="advantage__card__img">
-              <!-- icon666.com - MILLIONS vector ICONS FREE --><svg viewBox="0 0 480 480.00056"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m472 288h-46.695312l-43.257813-14.398438-14.046875-35.136718v-26.464844c-.054688-18.300781-13.863281-33.632812-32.054688-35.597656 0-1.097656.054688-2.195313.054688-3.289063v-117.113281c0-3.535156-2.316406-6.648438-5.703125-7.664062l-160-48c-1.5-.449219-3.09375-.449219-4.59375 0l-160 48c-3.382813 1.015624-5.703125 4.128906-5.703125 7.664062v117.113281c0 3.710938.25 7.375.382812 11.0625.203126 5.402344.503907 10.769531.984376 16.105469.082031.910156.191406 1.765625.28125 2.664062 9.824218 101.574219 71.363281 190.894532 162.777343 236.253907 2.25 1.125 4.898438 1.125 7.152344 0 11.964844-6.007813 23.519531-12.8125 34.574219-20.367188 2.511718 3.460938 5.683594 6.386719 9.335937 8.609375-7.988281 9.527344-9.734375 22.816406-4.480469 34.085938 5.253907 11.265625 16.558594 18.46875 28.992188 18.472656h136c1.582031 0 3.125-.46875 4.441406-1.34375l45.957032-30.65625h45.601562c4.417969 0 8-3.582031 8-8v-144c0-4.417969-3.582031-8-8-8zm-173.144531-39.304688 9.328125 23.304688h-46.480469c16.988281-30.472656 26.011719-64.742188 26.242187-99.632812l32.054688-9.613282v10.359375c0 1.710938-.054688 3.414063-.085938 5.128907-14.296874 5.078124-23.867187 18.585937-23.914062 33.757812v21.832031c-.003906 5.09375.964844 10.136719 2.855469 14.863281zm-114.855469 55.304688c.007812 8.171875 3.160156 16.03125 8.800781 21.945312-2.96875 2.160157-5.878906 4.398438-8.945312 6.398438l-15.855469 10.144531-15.824219-10.167969c-35.472656-22.738281-62.445312-56.558593-76.726562-96.199218l196.320312-58.898438c-1.09375 33.566406-11 66.253906-28.722656 94.777344h-27.046875c-17.671875 0-32 14.328125-32 32zm-163.65625-82.101562c-.0625-.402344-.136719-.800782-.199219-1.1875l31.792969-9.511719c.941406 4.800781 2.085938 9.601562 3.367188 14.289062l-32.25 9.679688c-1.054688-4.589844-1.925782-8.96875-2.710938-13.269531zm-3.6875-32.136719 31.640625-9.496094c.222656 5.015625.589844 10 1.167969 14.941406l-31.570313 9.472657c-.078125-.71875-.140625-1.429688-.222656-2.152344-.40625-4.125-.777344-8.3125-1.015625-12.765625zm255.34375-93.3125-208 62.398437v-57.207031l104.273438-37.238281 103.726562 29.628906zm0 16.703125v15.296875l-206.910156 62.070312c-.503906-4.96875-.816406-9.972656-.945313-15.007812zm48 17.601562v15.292969l-32 9.601563v-15.296876zm0-16.707031-32 9.601563v-15.296876l32-9.597656zm-252.671875 92.503906 130.175781-39.046875 74.496094-22.351562v15.296875l-201.375 60.414062c-1.265625-4.71875-2.394531-9.480469-3.296875-14.3125zm-51.328125-144.597656 152-45.601563 152 45.601563v20.09375l-32 9.601563v-3.648438c0-3.570312-2.367188-6.707031-5.800781-7.6875l-112-32c-1.601563-.464844-3.316407-.414062-4.886719.152344l-112 40c-3.1875 1.136718-5.3125 4.152344-5.3125 7.535156v67.648438l-32 9.601562zm152 361.070313c-68.90625-35.394532-120.046875-97.789063-141.230469-172.304688l33.335938-10c15.382812 43.304688 44.726562 80.261719 83.414062 105.058594l20.152344 12.953125c2.636719 1.695312 6.019531 1.695312 8.65625 0l20.152344-12.953125.207031-.136719c-2.816406 13.273437 3.148438 26.863281 14.824219 33.777344-4.855469 5.757812-7.515625 13.050781-7.511719 20.582031.015625 1.113281.089844 2.222656.222656 3.328125-10.289062 7.277344-21.050781 13.859375-32.222656 19.695313zm205.601562 40.976562h-133.601562c-8.835938 0-16-7.164062-16-16-.015625-8.304688 6.386719-15.214844 14.671875-15.832031 4.300781-.445313 7.507813-4.160157 7.320313-8.480469-.167969-4.296875-3.699219-7.691406-8-7.6875h-5.992188c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-8c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-8c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16h104c2.65625.003906 5.140625-1.3125 6.628906-3.515625 1.492188-2.199219 1.792969-4.992187.804688-7.460937l-13.714844-34.269532c-1.140625-2.835937-1.722656-5.863281-1.71875-8.921875v-21.832031c0-11.046875 8.953125-20 20-20s20 8.953125 20 20v28c0 1.019531.195312 2.027344.566406 2.976562l16 40c.882813 2.179688 2.675782 3.867188 4.90625 4.617188l42.527344 14.175781v133.949219zm90.398438-32h-32v-128h32zm0 0" />
-                <path
-                  d="m420.960938 102.71875-10.9375 11.683594c3.652343 3.417968 7.085937 7.0625 10.28125 10.910156l12.304687-10.230469c-3.621094-4.359375-7.511719-8.488281-11.648437-12.363281zm0 0" />
-                <path
-                  d="m464 201.992188c0-3.136719-.105469-6.242188-.320312-9.320313l-15.960938 1.082031c.183594 2.71875.277344 5.464844.28125 8.238282 0 2.265624-.0625 4.519531-.191406 6.753906l16 .917968c.128906-2.542968.191406-5.101562.191406-7.671874zm0 0" />
-                <path
-                  d="m407.878906 91.914062c-4.585937-3.335937-9.375-6.382812-14.34375-9.121093l-7.71875 14.007812c4.378906 2.402344 8.601563 5.074219 12.648438 8zm0 0" />
-                <path
-                  d="m461.792969 226.511719-15.746094-2.863281c-.890625 4.917968-2.09375 9.773437-3.597656 14.535156l15.246093 4.800781c1.710938-5.398437 3.078126-10.898437 4.097657-16.472656zm0 0" />
-                <path
-                  d="m378.160156 75.535156c-5.273437-2.09375-10.671875-3.851562-16.167968-5.261718l-4 15.496093c4.84375 1.25 9.605468 2.796875 14.257812 4.640625zm0 0" />
-                <path
-                  d="m433 260.121094 14 7.757812c1.601562-2.933594 3.199219-5.941406 4.566406-9.023437l-14.527344-6.6875c-1.226562 2.703125-2.570312 5.355469-4.039062 7.953125zm0 0" />
-                <path
-                  d="m429.160156 137.410156c2.6875 4.207032 5.113282 8.578125 7.265625 13.085938l14.445313-6.863282c-2.433594-5.117187-5.183594-10.078124-8.238282-14.847656zm0 0" />
-                <path
-                  d="m442 164.390625c1.558594 4.746094 2.820312 9.585937 3.777344 14.488281l15.703125-3.046875c-1.082031-5.566406-2.511719-11.0625-4.289063-16.449219zm0 0" />
-                <path
-                  d="m359.886719 152.578125c19.441406 7.699219 32.179687 26.515625 32.113281 47.421875h16c.09375-27.457031-16.640625-52.167969-42.167969-62.28125l-2.855469-1.140625-5.953124 14.847656zm0 0" />
-              </svg>
-            </div>
-            <h3 class="advantage__card__title">
-              Надежно
-            </h3>
-            <p class="advantage__card__text">
-              Заключаем договор и сразу же начинаем работу.
-            </p>
-          </div>
-          <div class="advantage__card">
-            <div class="advantage__card__img">
-              <!-- icon666.com - MILLIONS vector ICONS FREE --><svg version="1.1" id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 263.285 263.285" style="enable-background:new 0 0 263.285 263.285;" xml:space="preserve">
-                <g>
-                  <path
-                    d="M193.882,8.561c-7.383-3.756-16.414-0.813-20.169,6.573L62.153,234.556c-3.755,7.385-0.812,16.414,6.573,20.169 c2.178,1.107,4.499,1.632,6.786,1.632c5.466,0,10.735-2.998,13.383-8.205L200.455,28.73 C204.21,21.345,201.267,12.316,193.882,8.561z" />
-                  <path
-                    d="M113.778,80.818c0-31.369-25.521-56.89-56.89-56.89C25.521,23.928,0,49.449,0,80.818c0,31.368,25.521,56.889,56.889,56.889 C88.258,137.707,113.778,112.186,113.778,80.818z M56.889,107.707C42.063,107.707,30,95.644,30,80.818 c0-14.827,12.063-26.89,26.889-26.89c14.827,0,26.89,12.062,26.89,26.89C83.778,95.644,71.716,107.707,56.889,107.707z" />
-                  <path
-                    d="M206.396,125.58c-31.369,0-56.89,25.521-56.89,56.889c0,31.368,25.52,56.889,56.89,56.889 c31.368,0,56.889-25.52,56.889-56.889C263.285,151.1,237.765,125.58,206.396,125.58z M206.396,209.357 c-14.827,0-26.89-12.063-26.89-26.889c0-14.826,12.063-26.889,26.89-26.889c14.826,0,26.889,12.063,26.889,26.889 C233.285,197.294,221.223,209.357,206.396,209.357z" />
-                </g>
-              </svg>
-            </div>
-            <h3 class="advantage__card__title">
-              Скидки
-            </h3>
-            <p class="advantage__card__text">
-              Для постоянных клиентов компании действуют скидки.
-            </p>
-          </div>
-          <div class="advantage__card">
-            <div class="advantage__card__img">
-              <!-- icon666.com - MILLIONS vector ICONS FREE --><svg viewBox="0 -40 512.00232 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m507.527344 131.597656-129.144532-127.28125c-5.871093-5.785156-15.308593-5.75-21.136718.078125l-50.03125 50.234375c-14.863282 0-87.585938 0-102.425782 0l-50.035156-50.234375c-5.828125-5.828125-15.265625-5.863281-21.136718-.078125l-129.144532 127.28125c-2.878906 2.835938-4.4921872 6.714844-4.472656 10.753906.0195312 4.042969 1.667969 7.902344 4.574219 10.710938l51.722656 50.003906v6.367188c0 18.171875 5.574219 35.472656 15.875 50-14.15625 17.613281-13.15625 43.484375 3.304687 59.945312 7.910157 7.910156 18.25 12.515625 29.335938 13.113282.589844 10.675781 4.953125 21.175781 13.089844 29.3125 8.140625 8.144531 18.65625 12.5 29.339844 13.085937.585937 10.683594 4.941406 21.195313 13.085937 29.339844 15.988281 15.988281 41.222656 17.476562 58.9375 4.082031l10.964844 10.964844c8.816406 8.820312 20.398437 13.226562 31.984375 13.226562 11.582031 0 23.167968-4.410156 31.984375-13.226562 4.074219-4.074219 7.191406-8.761719 9.375-13.777344 17.292969 9.851562 39.539062 7.289062 54.101562-7.269531 8.140625-8.144531 12.5-18.65625 13.082031-29.34375 10.683594-.582031 21.199219-4.941407 29.34375-13.082031 7.910157-7.914063 12.507813-18.257813 13.109376-29.34375 10.675781-.589844 21.179687-4.945313 29.316406-13.082032 8.5-8.5 13.179687-19.800781 13.179687-31.820312 0-10.492188-3.566406-20.433594-10.125-28.441406 6.585938-10.449219 10.125-22.546876 10.125-35.199219v-14.851563l51.722657-50.003906c2.902343-2.808594 4.554687-6.667969 4.574218-10.710938.015625-4.039062-1.597656-7.917968-4.476562-10.753906zm-471.054688 10.578125 107.597656-106.039062 43.898438 43.898437c2.8125 2.8125 6.625 4.390625 10.605469 4.390625h45.777343l74.796876 74.796875c5.859374 5.859375 5.863281 15.347656 0 21.207032-5.847657 5.847656-15.363282 5.847656-21.210938 0l-29.921875-29.917969c-23.769531-23.769531-62.441406-24.324219-86.8125-.476563l-31.621094-31.621094c-5.855469-5.859374-15.355469-5.859374-21.210937 0-5.859375 5.859376-5.859375 15.355469 0 21.214844l31.605468 31.605469-66.261718 66.261719c-4.832032-8.457032-7.421875-18.058594-7.421875-28.0625 0-12.714844 1.042969-18.082032-4.574219-23.511719zm236.511719 255.890625c-5.9375 5.9375-15.601563 5.9375-21.542969 0l-10.652344-10.65625 21.710938-21.710937c11.164062 11.519531 3.71875 4.714843 12.753906 13.75 3.5 5.855469 2.742188 13.605469-2.269531 18.617187zm63.476563-21.046875c-5.851563 5.847657-15.367188 5.847657-21.214844 0-26.789063-26.789062 2.703125 2.785157-23.609375-24.363281-3.292969-5.714844-2.53125-13.136719 2.394531-18.0625 5.847656-5.847656 15.367188-5.851562 21.214844 0l21.214844 21.210938c5.847656 5.847656 5.847656 15.367187 0 21.214843zm42.425781-42.425781c-5.847657 5.847656-15.367188 5.847656-21.214844 0l-42.425781-42.429688c-5.863282-5.863281-5.863282-15.347656 0-21.210937 5.847656-5.847656 15.363281-5.847656 21.214844 0l42.425781 42.425781c5.863281 5.863282 5.863281 15.351563 0 21.214844zm42.425781-42.429688c-5.847656 5.847657-15.363281 5.851563-21.214844 0l-21.210937-21.210937c-5.863281-5.863281-5.863281-15.351563 0-21.214844 5.847656-5.847656 15.363281-5.847656 21.214843 0 5.148438 5.148438 15.882813 15.886719 21.210938 21.214844 5.847656 5.847656 5.847656 15.363281 0 21.210937zm8.96875-106.242187c-2.925781 2.828125-4.574219 6.71875-4.574219 10.785156v21.210938c0 4.410156-.792969 8.699219-2.292969 12.710937l-2.101562-2.101562c-17.542969-17.546875-46.09375-17.546875-63.640625 0-4.082031 4.082031-7.273437 8.816406-9.5 13.964844-17.179687-9.808594-39.492187-7.398438-54.140625 7.246093-14.796875 14.796875-17.035156 37.117188-7.246094 54.167969-6.527344 2.8125-13.054687 8.136719-14.179687 9.257812-10.863281 10.863282-59.46875 59.46875-69.851563 69.855469-5.851562 5.847657-15.367187 5.847657-21.214844 0-5.847656-5.851562-5.847656-15.363281 0-21.214843 3.738282-3.738282 37.105469-37.101563 42.425782-42.425782 5.859375-5.859375 5.859375-15.355468 0-21.214844-5.855469-5.859374-15.355469-5.859374-21.210938 0-5.332031 5.332032-38.070312 38.070313-42.425781 42.425782-5.847656 5.851562-15.363281 5.851562-21.214844 0-5.847656-5.847656-5.847656-15.363282 0-21.210938l42.429688-42.429687c5.855469-5.855469 5.855469-15.355469 0-21.210938-5.859375-5.859375-15.359375-5.859375-21.214844 0l-42.425781 42.425781c-5.863282 5.863282-15.351563 5.863282-21.214844 0-5.863281-5.863281-5.863281-15.347656 0-21.210937 12.488281-12.488281 92.789062-92.789063 105.230469-105.230469 12.402343-12.402344 32.480469-12.40625 44.886719 0l29.921874 29.921875c17.5625 17.558594 46.105469 17.527344 63.636719 0 8.496094-8.5 13.179688-19.796875 13.179688-31.816406s-4.683594-23.320313-13.179688-31.820313l-53.585937-53.582031h26.652344c3.976562 0 7.792968-1.582031 10.605468-4.394531l43.894532-43.894531 107.597656 106.039062zm0 0" />
-              </svg>
-            </div>
-            <h3 class="advantage__card__title">
-              Без посредников
-            </h3>
-            <p class="advantage__card__text">
-              У нас собственный автопарк, поэтому мы уверены в своих машинах.
-            </p>
-          </div>
-          <div class="advantage__card">
-            <div class="advantage__card__img">
-              <!-- icon666.com - MILLIONS vector ICONS FREE --><svg id="Capa_1" enable-background="new 0 0 512 512"
-                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path
-                    d="m512 256c0-140.96-115.049-256-256-256-30.793 0-62.427 6.358-94.024 18.899-7.7 3.056-11.465 11.775-8.409 19.476 3.057 7.7 11.777 11.465 19.476 8.409 28.059-11.138 55.97-16.784 82.957-16.784 124.617 0 226 101.383 226 226 0 58-22.454 112.865-62.508 154.722v-6.23c0-8.284-6.716-15-15-15s-15 6.716-15 15v42.427c0 8.284 6.716 15 15 15h42.427c8.284 0 15-6.716 15-15s-6.716-15-15-15h-6.294c45.111-47.133 71.375-109.211 71.375-175.919z" />
-                  <path
-                    d="m338.958 465.217c-28.06 11.137-55.971 16.783-82.958 16.783-124.617 0-226-101.383-226-226 0-58 22.454-112.865 62.508-154.722v6.23c0 8.284 6.716 15 15 15s15-6.716 15-15v-42.427c0-8.284-6.716-15-15-15h-42.427c-8.284 0-15 6.716-15 15s6.716 15 15 15h6.294c-45.112 47.134-71.375 109.211-71.375 175.919 0 140.959 115.049 256 256 256 30.793 0 62.428-6.358 94.024-18.899 7.7-3.056 11.465-11.776 8.409-19.476-3.057-7.7-11.778-11.463-19.475-8.408z" />
-                  <path
-                    d="m61 226c0 8.284 6.716 15 15 15s15-6.716 15-15c0-8.271 6.729-15 15-15s15 6.729 15 15c0 14.303-8.672 21.504-24 33-16.039 12.029-36 27-36 57 0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15h-40.607c4.012-6.044 10.667-11.295 19.607-18 16.039-12.029 36-27 36-57 0-24.813-20.187-45-45-45s-45 20.187-45 45z" />
-                  <path
-                    d="m196 181c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15h45v45c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15s-15 6.716-15 15v45h-30v-45c0-8.284-6.716-15-15-15z" />
-                  <path
-                    d="m391.448 312.362c-2.01 8.037 2.877 16.181 10.914 18.19 8.004 2.001 16.173-2.845 18.189-10.914l30-120c2.374-9.506-4.917-18.638-14.551-18.638h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h40.789z" />
-                  <path
-                    d="m323.384 317.861 15-120c1.028-8.22-4.803-15.717-13.023-16.745-8.227-1.027-15.717 4.804-16.744 13.024l-15 120c-1.028 8.22 4.803 15.717 13.023 16.745 8.219 1.025 15.716-4.802 16.744-13.024z" />
-                </g>
-              </svg>
-            </div>
-            <h3 class="advantage__card__title">
-              Всегда рядом
-            </h3>
-            <p class="advantage__card__text">
-              Мы работаем круглосуточнобез праздников и выходных.
-            </p>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-
-    <section class="easy">
-      <div class="container">
-        <h2 class="easy__title section-title">С Нами Легко!</h2>
-        <h3 class="easy__title2">Заказать Бетон или Автобетононасос в нашей компании проще простого.<br> От качественной
-          техники и продукции вас отделяет всего три шага!</h3>
-        <div class="easy__content">
-          <div class="easy__content__card1">
-            <span class="easystep">
-              1
-            </span>
-            <div class="easy__text">
-              <h2 class="easy__text__title">Вы оставляете заявку на сайте или по телефону</h2>
-              <p class="easy__text__text">Это очень просто. Нужно указать только номер телефона и ваше имя.</p>
-            </div>
-          </div>
-
-          <div class="easy__content__card2">
-            <span class="easystep">
-              2
-            </span>
-            <div class="easy__text">
-              <h2 class="easy__text__title">Мы перезваниваем и уточняем детали</h2>
-              <p class="easy__text__text">Наш менеджер перезвонит для уточнения всех деталей.</p>
-            </div>
-          </div>
-
-          <div class="easy__content__card3">
-            <span class="easystep">
-              3
-            </span>
-            <div class="easy__text">
-              <h2 class="easy__text__title">Заключаем договор и доставляем Бетон или технику, по вашему заказу</h2>
-              <p class="easy__text__text">после заключения договора и оплаты услуг, мы исполняем наши договоренности.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <section class="nasos" id="nasos">
-      <div class="container">
-        <h2 class="nasos__title section-title">Автобетононасосы</h2>
-        <h3 class="nasos__title2">Цены и характеристики</h3>
-        <div class="nasos__content">
-
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="card">
-                  <img class="card__background" src="/img/32.jpg"
-                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
-                    height="2193" />
-                  <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                      <h2 class="card__title">Автобетононасос 32м</h2>
-
-                      <ul class="card__description list-reset">
-                        <li>Высота подачи: 30,5 м</li>
-                        <li>Дальность подачи: 26,6 м</li>
-                        <li>Размер площадки: 6х10 м</li>
-                      </ul>
-                    </div>
-                    <button class="card__button btn" id="myBtn26">Узнать стоимость</button>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card">
-                  <img class="card__background" src="/img/36.jpg"
-                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
-                    height="2193" />
-                  <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                      <h2 class="card__title">Автобетононасос 36м</h2>
-
-                      <ul class="card__description list-reset">
-                        <li>Высота подачи: 35,6 м</li>
-                        <li>Дальность подачи: 31,4 м</li>
-                        <li>Размер площадки: 8х11 м</li>
-                      </ul>
-                    </div>
-                    <button class="card__button btn" id="myBtn27">Узнать стоимость</button>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card">
-                  <img class="card__background" src="/img/42.jpg"
-                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
-                    height="2193" />
-                  <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                      <h2 class="card__title">Автобетононасос 42м</h2>
-
-                      <ul class="card__description list-reset">
-                        <li>Высота подачи: 41.6 м</li>
-                        <li>Дальность подачи: 37.6 м</li>
-                        <li>Размер площадки: 8х11 м</li>
-                      </ul>
-                    </div>
-                    <button class="card__button btn" id="myBtn28">Узнать стоимость</button>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card">
-                  <img class="card__background" src="/img/46.jpg"
-                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
-                    height="2193" />
-                  <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                      <h2 class="card__title">Автобетононасос 46м</h2>
-
-                      <ul class="card__description list-reset">
-                        <li>Высота подачи: 45.6 м</li>
-                        <li>Дальность подачи: 41.6 м</li>
-                        <li>Размер площадки: 12х12 м</li>
-                      </ul>
-                    </div>
-                    <button class="card__button btn" id="myBtn29">Узнать стоимость</button>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card">
-                  <img class="card__background" src="/img/52.jpg"
-                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
-                    height="2193" />
-                  <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                      <h2 class="card__title">Автобетононасос 52м</h2>
-
-                      <ul class="card__description list-reset">
-                        <li>Высота подачи: 51.6 м</li>
-                        <li>Дальность подачи: 48.6 м</li>
-                        <li>Размер площадки: 12х14 м</li>
-                      </ul>
-                    </div>
-                    <button class="card__button btn" id="myBtn30">Узнать стоимость</button>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card">
-                  <img class="card__background" src="/img/62.jpg"
-                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
-                    height="2193" />
-                  <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                      <h2 class="card__title">Автобетононасос 62м</h2>
-
-                      <ul class="card__description list-reset">
-                        <li>Высота подачи: 61.6 м</li>
-                        <li>Дальность подачи: 57.6 м</li>
-                        <li>Размер площадки: 14х14 м</li>
-                      </ul>
-                    </div>
-                    <button class="card__button btn" id="myBtn31">Узнать стоимость</button>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-          </div>
-          <div class="nasos__content__info">
-            <h2 class="nasos__content__info__title section-title">ТРЕБОВАНИЯ ДЛЯ БЕЗОПАСНОЙ РАБОТЫ АБН(АВТОБЕТОНОНАСОС)
-              НА ОБЪЕКТЕ</h2>
-            <ul>
-              <li>Свободный подъезд и площадка с твердым грунтом</li>
-              <li>Площадка c площадью 6х10 метров для установки техники с опорами</li>
-              <li>Наличие воды - не менее 1 м/куб</li>
-              <li>Место для слива воды после промывки насоса: 0,5-1 м/куб</li>
-              <li>Промежутки между подачами смеси не должны быть больше 30 минут</li>
-              <li>Бетонная смесь Соответствует ГОСТу</li>
-              <li>Минимальная температура воздуха для работы АБН - до -25°C</li>
-            </ul>
-          </div>
-          <div class="nasos__content__info1">
-            <h2 class="nasos__content__info__title section-title">
-              РЕЖИМ РАБОТЫ АВТОБЕТОНОНАСОСА НА ОБЪЕКТЕ
+      <section class="deliv">
+        <div class="container">
+          <div class="delive__content">
+            <h2 class="delive__title section-title">
+              Доставка Бетона<br> Осуществляется Автобетоносмесителем
             </h2>
-            <ul>
-              <li>Минимальное время работы техники — 7 часов работы + 1 час подачи</li>
-              <li>Начало смены считается от времени прибытия техники на объект</li>
+            <div class="delive__text">
+              <article class="delive__card">
+                <div class="delive__img">
+                  <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <g>
+                        <path
+                          d="m395.78 296.751h-15.531c-9.931-.344-9.923-14.659 0-15h15.531c9.931.344 9.924 14.659 0 15z"
+                          fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                      </g>
+                      <g>
+                        <path
+                          d="m480.556 157.097c-1.021-3.062-3.887-5.128-7.115-5.128h-40.12c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h34.714l5.354 16.064h-93.139c-4.143 0-7.5 3.358-7.5 7.5v62.125c0 3.441 2.342 6.441 5.681 7.276l118.569 29.641v48.774h-21.214c-19.167-41.171-78.736-41.147-97.888 0h-21.208v-171.38h43.939c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-51.439c-4.143 0-7.5 3.358-7.5 7.5v116.75h-16.07v-79.25c0-2.829-1.566-5.292-3.879-6.569l-58.656-56.256c-.766-.767-1.635-1.336-2.607-1.705l-27.389-11.064c-3.841-1.552-8.212.306-9.763 4.145-1.552 3.841.305 8.212 4.146 9.763l20.524 8.291-52.561 130.091-72.493-29.29 52.561-130.093 21.637 8.741c3.845 1.552 8.213-.305 9.764-4.145 1.552-3.84-.305-8.211-4.145-9.763 0 0-29.303-11.806-29.671-11.893-.011-.003-85.343-.492-85.343-.492-3.065-.011-5.832 1.847-6.98 4.69l-3.008 7.446-21.845-8.826c-4.399-1.314-7.654.067-9.764 4.145l-29.09 72.001c-.153.379-16.875 74.833-16.875 74.833-.959 4.276 3.08 9.254 7.487 9.138l29.932-.676c3.376-.076 6.285-2.399 7.106-5.674l12.237-48.818 5.184 4.971v69.747l-43.26 28.833c-2.086 1.391-3.34 3.733-3.34 6.241v23.57h-8.029c-4.143 0-7.5 3.358-7.5 7.5v31.06c0 4.142 3.357 7.5 7.5 7.5h28.717c19.17 41.161 78.727 41.137 97.881 0h26.368c19.17 41.161 78.727 41.137 97.881 0h43.433c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-38.876c.794-5.353.794-10.707.001-16.06h110.438c-.793 5.353-.792 10.707.001 16.06h-38.874c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h43.432c19.17 41.16 78.727 41.138 97.881 0h28.717c4.143 0 7.5-3.358 7.5-7.5v-124.25c0-.808-31.444-95.564-31.444-95.564zm-169.936 119.122h-16.282l16.282-40.308zm-32.452-.018-67.485-.234 49.88-123.458 48.701 46.708zm-117.913-164.22-49.88 123.457-48.706-46.705 27.189-67.294c.02-.05.04-.1.059-.151l3.855-9.542zm-128.706 132.631-14.632.331 14.279-63.708 26.051-64.477 14.891 6.016-26.283 65.046c-.157.389-14.306 56.792-14.306 56.792zm76.259 9.148c.805.811 1.722 1.407 2.75 1.789l51.158 20.67h-84.586v-51.877zm-92.808 115.649v-16.06h16.659c-.793 5.353-.792 10.707.001 16.06zm70.157 31.06c-21.556 0-39.093-17.537-39.093-39.093s17.537-39.093 39.093-39.093c20.928 0 39.094 18.283 39.094 39.093 0 20.677-18.324 39.093-39.094 39.093zm53.499-31.06c.794-5.353.794-10.707.001-16.06h17.251c-.793 5.353-.792 10.707.001 16.06zm70.75 31.06c-21.556 0-39.093-17.537-39.093-39.093s17.537-39.093 39.093-39.093c20.927 0 39.094 18.283 39.094 39.093 0 21.555-17.537 39.093-39.094 39.093zm0-93.187c-21.597 0-40.279 12.723-48.943 31.067h-26.361c-19.167-41.17-78.737-41.148-97.888 0h-5.684v-19.556l41.37-27.574h151.178l44.265 29.786c3.75 2.224 7.22 1.546 10.41-2.036 2.312-3.437 1.401-8.097-2.035-10.41l-25.77-17.34h91.742v47.13h-83.34c-8.665-18.344-27.346-31.067-48.944-31.067zm178.343-60.48v-48.769h90.639l18.612 55.843v20.238zm39.094 153.667c-20.923 0-39.094-18.284-39.094-39.093 0-20.68 18.317-39.093 39.094-39.093 21.556 0 39.093 17.537 39.093 39.093s-17.538 39.093-39.093 39.093zm70.157-31.06h-16.66c.794-5.353.794-10.707.001-16.06h16.659z"
+                          fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                        <path
+                          d="m85.157 338.344c-12.699 0-23.03 10.332-23.03 23.031 1.157 30.513 44.908 30.503 46.062 0-.001-12.699-10.333-23.031-23.032-23.031zm0 31.063c-4.428 0-8.03-3.603-8.03-8.031.377-10.63 15.686-10.626 16.062 0-.001 4.428-3.603 8.031-8.032 8.031z"
+                          fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                        <path
+                          d="m209.406 338.344c-12.699 0-23.03 10.332-23.03 23.031 1.157 30.513 44.908 30.503 46.062 0 0-12.699-10.333-23.031-23.032-23.031zm0 31.063c-4.428 0-8.03-3.603-8.03-8.031.377-10.63 15.686-10.626 16.062 0 0 4.428-3.603 8.031-8.032 8.031z"
+                          fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                        <path
+                          d="m426.843 338.344c-12.699 0-23.031 10.332-23.031 23.031 1.158 30.512 44.909 30.504 46.062 0-.001-12.699-10.332-23.031-23.031-23.031zm0 31.063c-4.429 0-8.031-3.603-8.031-8.031.377-10.629 15.686-10.627 16.062 0-.001 4.428-3.603 8.031-8.031 8.031z"
+                          fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="delive__p">
+                  Автобетоносмеситель – это техника для перемещения и смешивания бетона на стройплощадке.
+                  Автобетоносмеситель
+                  удобен тем, что позволяет смешивать бетон прямо на месте, где он нужен. Благодаря этому удобству
+                  экономится
+                  время и сокращаются затраты на перевозку бетонной смеси.
+                </p>
+
+              </article>
+
+              <article class="delive__card">
+                <div class="delive__img">
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m474.835938 190.613281-24.96875-4.234375c-2.222657-6.1875-4.734376-12.257812-7.511719-18.160156l14.703125-20.570312c12.792968-17.972657 10.738281-42.246094-4.835938-57.667969l-30.003906-30.007813c-8.480469-8.480468-19.722656-13.152344-31.652344-13.152344-9.394531 0-18.378906 2.894532-25.917968 8.320313l-20.648438 14.707031c-6.386719-3.019531-12.867188-5.6875-19.390625-7.992187l-4.128906-24.464844c-3.632813-21.667969-22.21875-37.390625-44.195313-37.390625h-42.390625c-21.972656 0-40.558593 15.722656-44.183593 37.347656l-4.339844 25.421875c-6.128906 2.238281-12.171875 4.78125-18.089844 7.621094l-20.273438-14.601563c-7.601562-5.472656-16.621093-8.363281-26.085937-8.363281-12.046875 0-23.292969 4.679688-31.679687 13.179688l-30.074219 29.976562c-15.53125 15.53125-17.566407 39.785157-4.835938 57.667969l14.941407 20.992188c-2.753907 5.925781-5.230469 12.023437-7.417969 18.246093l-24.46875 4.128907c-21.664063 3.636718-37.386719 22.222656-37.386719 44.195312v42.390625c0 21.972656 15.722656 40.558594 37.347656 44.1875l25.421875 4.335937c2.238281 6.132813 4.785157 12.179688 7.621094 18.09375l-14.546875 20.234376c-12.792969 17.972656-10.738281 42.25 4.835938 57.667968l30.003906 30.007813c8.480468 8.480469 19.722656 13.152343 31.652344 13.152343 9.394531 0 18.378906-2.894531 25.914062-8.316406l20.992188-14.941406c5.515624 2.5625 11.234374 4.910156 17.105468 7.023438l4.160156 24.964843c3.636719 21.664063 22.222657 37.386719 44.195313 37.386719h42.488281c21.972656 0 40.5625-15.722656 44.191406-37.359375l4.234376-24.972656c6.1875-2.222657 12.257812-4.734375 18.160156-7.511719l20.503906 14.65625c7.601562 5.472656 16.621094 8.367188 26.085938 8.367188 11.925781 0 23.167968-4.671876 31.648437-13.152344l30.003906-30.007813c15.535157-15.53125 17.566407-39.785156 4.835938-57.667969l-14.71875-20.667968c2.851562-6.039063 5.371093-12.105469 7.539062-18.136719l24.933594-4.15625c21.664063-3.636719 37.386719-22.222656 37.386719-44.195313v-42.304687c.246094-21.996094-15.363282-40.605469-37.160156-44.277344zm7.160156 86.582031c0 7.261719-5.195313 13.40625-12.335938 14.605469l-33.070312 5.511719c-6.101563 1.015625-11.023438 5.320312-12.855469 11.238281-2.9375 9.519531-6.972656 19.25-11.984375 28.90625-2.835938 5.445313-2.382812 11.933594 1.179688 16.925781l19.488281 27.367188c4.203125 5.90625 3.527343 13.921875-1.609375 19.058594l-30.003906 30.003906c-2.855469 2.855469-6.464844 4.367188-10.4375 4.367188-3.132813 0-6.089844-.9375-8.597657-2.742188l-27.25-19.476562c-5.011719-3.597657-11.527343-4.050782-17-1.1875-9.164062 4.796874-18.902343 8.832031-28.945312 11.984374-5.859375 1.835938-10.136719 6.742188-11.15625 12.78125l-5.617188 33.105469c-1.199219 7.160157-7.34375 12.355469-14.609375 12.355469h-42.488281c-7.265625 0-13.40625-5.195312-14.605469-12.335938l-5.511718-33.070312c-1.007813-6.0625-5.273438-10.976562-11.132813-12.828125-9.898437-3.125-19.324219-7-28.023437-11.519531-2.371094-1.230469-4.9375-1.835938-7.492188-1.835938-3.304688 0-6.59375 1.015625-9.410156 3.019532l-27.738282 19.742187c-2.5 1.800781-5.34375 2.710937-8.453124 2.710937-3.972657 0-7.582032-1.507812-10.4375-4.367187l-30.058594-30.054687c-5.128906-5.078126-5.78125-13.070313-1.597656-18.949219l19.371093-26.945313c3.644531-5.058594 4.089844-11.621094 1.152344-17.140625-4.925781-9.238281-9.007813-18.925781-12.136719-28.796875-1.851562-5.820312-6.738281-10.074218-12.753906-11.101562l-33.523438-5.714844c-7.15625-1.203125-12.351562-7.347656-12.351562-14.609375v-42.390625c0-7.261719 5.195312-13.40625 12.363281-14.609375l32.664063-5.511719c6.105468-1.027344 11.023437-5.34375 12.839844-11.28125 3.082031-10.085937 7.046874-19.839844 11.785156-28.980468 2.820312-5.433594 2.367187-11.90625-1.183594-16.902344l-19.695312-27.671875c-4.207032-5.90625-3.53125-13.921875 1.589843-19.042969l30.105469-30.003906.109375-.113282c2.707031-2.753906 6.378906-4.269531 10.34375-4.269531 3.132813 0 6.09375.9375 8.554687 2.710938l27.0625 19.480469c5.066407 3.648437 11.636719 4.085937 17.136719 1.148437 9.238281-4.925781 18.925781-9.007813 28.785157-12.132813 5.820312-1.847656 10.074218-6.726562 11.109374-12.757812l5.71875-33.523438c1.199219-7.15625 7.34375-12.351562 14.609376-12.351562h42.390624c7.261719 0 13.40625 5.195312 14.609376 12.363281l5.511718 32.675781c1.03125 6.109376 5.355469 11.023438 11.296875 12.835938 10.128907 3.078125 20.230469 7.234375 30.03125 12.359375 5.445313 2.84375 11.933594 2.398437 16.949219-1.167969l27.429688-19.535156c2.496093-1.800781 5.339843-2.710938 8.453124-2.710938 3.96875 0 7.578126 1.507813 10.4375 4.367188l30.054688 30.054688c5.128906 5.078124 5.785156 13.070312 1.574219 18.980468l-19.496094 27.277344c-3.578125 5.015625-4.023437 11.523438-1.167969 16.976562 4.800782 9.164063 8.832032 18.902344 11.988282 28.949219 1.839843 5.859375 6.742187 10.132813 12.78125 11.152344l33.078124 5.613281.027344.003906c7.136719 1.199219 12.25 7.253907 12.148438 14.398438zm0 0"
+                      fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                    <path
+                      d="m256 156.453125c-54.890625 0-99.546875 44.65625-99.546875 99.546875s44.65625 99.546875 99.546875 99.546875 99.546875-44.65625 99.546875-99.546875-44.65625-99.546875-99.546875-99.546875zm0 169.09375c-38.347656 0-69.546875-31.199219-69.546875-69.546875s31.199219-69.546875 69.546875-69.546875 69.546875 31.199219 69.546875 69.546875-31.199219 69.546875-69.546875 69.546875zm0 0"
+                      fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                  </svg>
+                </div>
+                <p class="delive__p">
+                  В состав автобетоносмесителя входят различные компоненты: во-первых, это сам бак, в котором происходит
+                  смешивание компонентов, во-вторых, это шасси, на котором устанавливается бак, а также двигатель,
+                  используемый для привода вращения барабана, и некоторое количество систем и механизмов, обеспечивающих
+                  управление и контроль.
+                </p>
+
+              </article>
+
+              <article class="delive__card">
+                <div class="delive__img">
+                  <svg id="Capa_1" enable-background="new 0 0 511.543 511.543" viewBox="0 0 511.543 511.543"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path
+                        d="m10 275.733c-5.522 0-10 4.477-10 10s4.478 10 10 10h81.536v.04c0 18.431 14.995 33.426 33.426 33.426h41.593c18.431 0 33.425-14.995 33.425-33.426v-21.486c50.802 5.036 90.615 48.014 90.615 100.119v66.81c0 28.221 22.96 51.181 51.181 51.181s51.181-22.96 51.181-51.181v-6.524c0-10.111 8.227-18.338 18.339-18.338h2.579c21.14 0 38.339-17.199 38.339-38.338 0-10.112 8.227-18.338 18.338-18.338h2.654c21.14 0 38.338-17.198 38.338-38.338v-30.867c0-26.092-5.181-51.395-15.399-75.206-2.178-5.076-8.059-7.425-13.133-5.246-5.075 2.178-7.424 8.058-5.246 13.133 9.143 21.305 13.778 43.955 13.778 67.319v30.867c0 10.111-8.227 18.338-18.338 18.338h-2.654c-21.14 0-38.338 17.199-38.338 38.338 0 10.112-8.227 18.338-18.339 18.338h-2.579c-21.14 0-38.339 17.198-38.339 38.338v6.524c0 17.193-13.987 31.181-31.181 31.181s-31.181-13.988-31.181-31.181v-66.81c0-63.142-48.766-115.107-110.615-120.204v-29.342h24.154c72.856 0 132.129 59.272 132.129 132.128 0 5.523 4.478 10 10 10s10-4.477 10-10c0-83.884-68.245-152.128-152.129-152.128h-24.154v-31.066h40.695c5.522 0 10-4.477 10-10s-4.478-10-10-10h-40.695v-34.207h120.68c38.949 0 77.06 13.461 107.309 37.903 4.296 3.47 10.593 2.804 14.063-1.494 3.471-4.295 2.803-10.592-1.493-14.063-33.796-27.308-76.37-42.347-119.879-42.347h-120.68v-47.014c0-18.431-14.994-33.426-33.425-33.426h-41.593c-18.431 0-33.426 14.995-33.426 33.426v.04h-81.536c-5.522 0-10 4.477-10 10s4.478 10 10 10h81.536v203.122h-81.536zm101.536-223.161c0-7.403 6.022-13.426 13.426-13.426h41.593c7.402 0 13.425 6.023 13.425 13.426v243.201c0 7.403-6.022 13.426-13.425 13.426h-41.593c-7.403 0-13.426-6.023-13.426-13.426z"
+                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                      <path
+                        d="m431.624 315.337c5.522 0 10-4.477 10-10v-1.383c0-82.798-67.361-150.16-150.159-150.16-5.522 0-10 4.477-10 10s4.478 10 10 10c71.77 0 130.159 58.389 130.159 130.16v1.383c0 5.523 4.478 10 10 10z"
+                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                      <path
+                        d="m468.741 172.102c-3.939-1.614-8.611-.541-11.398 2.7-2.726 3.17-3.182 7.818-1.123 11.455 2.099 3.708 6.462 5.727 10.651 4.885 4.087-.822 7.324-4.217 7.935-8.343.664-4.486-1.89-8.957-6.065-10.697z"
+                        fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                    </g>
+                  </svg>
+                </div>
+                <p class="delive__p">
+                  Принцип работы автобетоносмесителя достаточно прост: компоненты бетонной смеси загружаются в бак,
+                  затем
+                  бак
+                  начинает вращаться вокруг своей оси, чтобы обеспечить равномерное распределение составляющих. После
+                  этого
+                  бетон можно выгрузить на строительную площадку и использовать для нужд проекта.
+                </p>
+              </article>
+
+              <article class="delive__card">
+                <div class="delive__img">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496"
+                    style="enable-background:new 0 0 496 496;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path
+                          d="M488.112,219.96L486.76,212h-56.216l1.792,10.616c3.744,22.472,6.12,45.776,7.08,69.384H408v-80c0-13.232-10.768-24-24-24 h-16c-4.416,0-8-3.592-8-8v-16c0-13.232-10.768-24-24-24h-64v-24h96V68H128v48h96v24h-54.112c-9.152,0-17.376,5.08-21.472,13.264 l-7.16,14.312c-1.36,2.728-4.096,4.424-7.144,4.424H96c-13.232,0-24,10.768-24,24v56H48v-64H0v176h48v-64h24v64 c0,13.232,10.768,24,24,24h41.376c2.104,0,4.168,0.856,5.656,2.344l30.624,30.624c4.528,4.536,10.56,7.032,16.968,7.032H384 c13.232,0,24-10.768,24-24v-64h31.408c-0.808,18.664-2.504,37.168-5.08,55.112L430.776,420h56.168l3.232-22.624 c3.864-27.08,5.824-54.68,5.824-82.032C496,283.48,493.344,251.392,488.112,219.96z M72,284H32v64H16V204h16v64h40V284z M144,100 V84h208v16h-96v40h-16v-40H144z M120,372H96c-4.416,0-8-3.592-8-8V196c0-4.408,3.584-8,8-8h24v40h32c4.416,0,8,3.592,8,8v80 c0,4.408-3.584,8-8,8h-32V372z M200,412h-9.376c-2.104,0-4.16-0.856-5.656-2.344l-30.624-30.624 c-4.528-4.536-10.56-7.032-16.968-7.032H136v-32h16c13.232,0,24-10.768,24-24v-80c0-13.232-10.768-24-24-24h-16v-24.128 c8.376-0.648,15.768-5.52,19.576-13.136l7.16-14.312c1.368-2.728,4.104-4.424,7.152-4.424H200V412z M264,412h-16v-32h-16v32h-16 v-88h16v40h16v-40h16V412z M296,412h-16v-88h16V412z M328,412h-16v-88h16V412z M392,404c0,4.408-3.584,8-8,8h-8v-56h-16v56h-16 v-88h16v16h16v-16h16V404z M392,308H216v-16h176V308z M280,276v-32h48v32H280z M392,276h-48v-48h-80v48h-48v-72h112v-16H216v-32 h120c4.416,0,8,3.592,8,8v16c0,13.232,10.768,24,24,24h16c4.416,0,8,3.592,8,8V276z M474.328,395.112L473.064,404h-23.832 l0.944-6.624c3.024-21.168,4.88-43.088,5.528-65.144l0.232-8.232H408v-16h47.896l-0.216-8.216 c-0.648-24.352-2.768-48.456-6.296-71.784H473.2c4.512,28.824,6.8,58.176,6.8,87.344C480,341.944,478.096,368.784,474.328,395.112 z"
+                          fill="#000000" style="fill: rgb(135, 42, 24);"></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <rect x="120" y="268" width="16" height="16" fill="#000000" style="fill: rgb(135, 42, 24);">
+                        </rect>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <rect x="232" y="244" width="16" height="16" fill="#000000" style="fill: rgb(135, 42, 24);">
+                        </rect>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <rect x="360" y="244" width="16" height="16" fill="#000000" style="fill: rgb(135, 42, 24);">
+                        </rect>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <p class="delive__p">
+                  Существует большой выбор автобетоносмесителей, различающихся по размеру, мощности, марке и серии.
+                  Выбор
+                  определенной модели зависит от многих факторов, таких как объем загрузки, длина перевозимых дистанций,
+                  требования проекта и прочие.
+                </p>
+
+              </article>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="delive__price">
+        <div class="container">
+          <h2 class="delive__price__title section-title">
+            Стоимость доставки Бетона
+          </h2>
+          <h3 class="delive__price__title2">
+            Доставка бетона на дальние расстояния не влияет на его характеристики.<br>
+            Бетон до объекта доставляется спецтранспортом,<br>
+            что обеспечивает необходимые для него свойства.
+          </h3>
+          <div class="delive__price__content">
+
+            <div class="delive__price__table">
+              <table class="redTable">
+                <thead>
+                  <tr>
+                    <th>Расстояние</th>
+                    <th>Цена за 1м3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>до 5 км</td>
+                    <td>350 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>до 10 км</td>
+                    <td>400 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>до 15 км</td>
+                    <td>450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>до 20 км</td>
+                    <td>500 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>до 25 км</td>
+                    <td>550 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>до 30 км</td>
+                    <td>600 руб.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="delive__price__img">
+              <img src="/img/987232.png" alt="путь">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <h2 class="map__title section-title">
+            Наши Адреса
+          </h2>
+
+          <div class="map__content">
+            <div id="map" class="map__map"></div>
+
+            <div class="map__adress">
+              <h2 class="map__adress__title title__adress">Адрес Офиса:</h2>
+              <p class="map__adress__text">
+                3-й угрешский проезд д.6 стр.1
+              </p>
+              <h2 class="map__adress__title">Бетонный завод №1:</h2>
+              <p class="map__adress__text">
+                Южнопортовая улица 28А стр.15
+              </p>
+              <h2 class="map__adress__title">Бетонный завод №2:</h2>
+              <p class="map__adress__text">
+                Нагорная д.10
+              </p>
+              <h2 class="map__adress__title">Бетонный завод №3:</h2>
+              <p class="map__adress__text">
+                Вилюйская д.10
+              </p>
+              <h2 class="map__adress__title">Бетонный завод №4:</h2>
+              <p class="map__adress__text">
+                Маршала Прошлякова д.28
+              </p>
+            </div>
+
+
+          </div>
+
+
+
+
+        </div>
+      </section>
+
+      <section class="advantage">
+        <div class="container">
+          <h2 class="advantage__title section-title">Наши преимущества</h2>
+          <h3 class="advantage__title2">Обращаясь в нашу компанию,<br> Вы всегда будете уверены в том,<br>Что сделали
+            правильный
+            выбор.</h3>
+          <div class="advantage__content">
+            <div class="advantage__card">
+              <div class="advantage__card__img">
+                <!-- icon666.com - MILLIONS vector ICONS FREE --><svg id="Object" viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="m16 1a15 15 0 1 0 15 15 15 15 0 0 0 -15-15zm0 26a11 11 0 1 1 11-11 11 11 0 0 1 -11 11z" />
+                  <path
+                    d="m16 7a9 9 0 1 0 9 9 9 9 0 0 0 -9-9zm5 11h-6a1 1 0 0 1 -1-1v-4a1 1 0 0 1 2 0v3h5a1 1 0 0 1 0 2z" />
+                </svg>
+              </div>
+              <h3 class="advantage__card__title">
+                Быстро
+              </h3>
+              <p class="advantage__card__text">
+                Мы доставляем Бетон уже в день обращения в нашу компанию.
+              </p>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card__img">
+                <!-- icon666.com - MILLIONS vector ICONS FREE --><svg id="Capa_1" enable-background="new 0 0 512 512"
+                  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="m100.119 132.51h1.014c7.729 0 14.017-6.288 14.017-14.017v-8.544c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v7.561c-4.236 0-7.53 3.408-7.53 7.5-.001 4.142 3.357 7.5 7.499 7.5z" />
+                    <path
+                      d="m469.862 179.592-15.147-3.787c-.53-2.106-1.753-4.029-3.562-5.41-3.276-2.503-7.761-2.688-11.228-.486-1.099-1.518-1.718-3.367-1.718-5.313v-5.424c9.839-8.088 16.409-20.062 17.276-33.638.714-11.187 2.837-44.463 3.538-55.445.586-9.19-2.691-18.313-8.992-25.03-6.301-6.716-15.197-10.568-24.407-10.568h-35.01c-9.209 0-18.105 3.852-24.407 10.568-6.301 6.716-9.579 15.839-8.993 25.03.702 11.006 2.826 44.284 3.538 55.445.866 13.577 7.436 25.55 17.276 33.638v5.424c0 1.946-.62 3.795-1.718 5.313-3.468-2.203-7.953-2.016-11.228.487-1.809 1.382-3.032 3.305-3.562 5.41l-15.147 3.787c-10.613 2.653-19.484 9.814-24.408 19.358l-14.745-3.686c-.273-.309 1.413 1.399-8.797-8.82-1.194-1.191-2.685-1.952-4.261-2.247-.321-1.213-.485-2.47-.485-3.746v-8.452c13.126-10.376 21.933-26.052 23.071-43.883.557-8.725 1.361-21.334 3.785-59.324 1.138-18.2-5.179-35.295-17.412-48.333-12.2-13.003-29.379-20.46-47.132-20.46-18.059 0-34.81 7.253-47.166 20.423s-18.527 30.348-17.377 48.368c.309 4.841.88 13.802 1.146 17.958.264 4.133 3.828 7.275 7.962 7.007 4.134-.264 7.271-3.828 7.007-7.962l-.257-4.029c3.364-12.478 14.575-21.103 27.616-21.103 6.049 0 11.813 1.858 16.67 5.376 2.624 1.9 6.172 1.899 8.797-.001 4.856-3.517 10.62-5.375 16.669-5.375 13.04 0 24.251 8.627 27.616 21.107l-2.896 45.392c-1.537 24.09-21.65 42.96-45.789 42.96s-44.252-18.87-45.789-42.96l-.335-5.253c-.265-4.134-3.836-7.272-7.963-7.006-4.134.264-7.271 3.829-7.007 7.963l.335 5.251c1.138 17.844 9.958 33.53 23.1 43.906v8.429c0 1.275-.164 2.532-.485 3.744-1.578.296-3.072 1.059-4.268 2.255l-8.443 8.443c-.12.12-.236.244-.347.37l-14.751 3.687c-4.934-9.535-13.844-16.719-24.404-19.359l-15.146-3.787c-.53-2.106-1.754-4.029-3.562-5.412-3.276-2.502-7.761-2.688-11.228-.486-1.099-1.518-1.718-3.367-1.718-5.313v-5.424c9.84-8.088 16.41-20.062 17.276-33.638.726-11.373 1.322-20.714 2.423-37.977.887-13.902-3.874-27.154-13.406-37.313s-22.454-15.754-36.384-15.754-26.851 5.596-36.383 15.756c-9.532 10.159-14.292 23.41-13.405 37.312.275 4.315 2.14 33.549 2.423 37.977.866 13.577 7.437 25.55 17.276 33.638v5.424c0 1.946-.62 3.795-1.718 5.313-3.468-2.203-7.953-2.016-11.228.487-1.809 1.382-3.033 3.305-3.562 5.41l-15.146 3.787c-16.832 4.208-28.588 19.264-28.588 36.614v65.622c0 4.759 3.872 8.63 8.63 8.63h115.685v46.865c0 4.808 3.911 8.719 8.719 8.719h17.926l3.165 5.275c-1.597 3.311-3.008 6.715-4.22 10.179l-19.363 4.841c-3.666.922-6.226 4.205-6.226 7.984v39.087c0 3.779 2.56 7.062 6.236 7.987l19.353 4.838c1.212 3.465 2.624 6.869 4.22 10.179l-10.267 17.111c-1.944 3.242-1.437 7.375 1.239 10.057l27.644 27.644c2.681 2.677 6.819 3.178 10.051 1.232l17.11-10.266c3.308 1.596 6.711 3.006 10.179 4.22l4.838 19.354c.918 3.672 4.202 6.236 7.986 6.236h39.087c3.785 0 7.069-2.564 7.987-6.236l4.838-19.353c3.466-1.213 6.87-2.624 10.18-4.221l17.094 10.256c3.244 1.956 7.384 1.455 10.073-1.228l27.644-27.645c2.667-2.673 3.176-6.802 1.233-10.052l-10.266-17.11c1.597-3.311 3.008-6.715 4.22-10.179l19.363-4.841c3.666-.922 6.226-4.205 6.226-7.984v-39.087c0-3.779-2.56-7.062-6.226-7.984l-.01-.003-19.353-4.838c-1.212-3.465-2.624-6.868-4.22-10.179l3.165-5.275h17.926c4.808 0 8.719-3.911 8.719-8.719v-46.865h115.683c4.759 0 8.63-3.871 8.63-8.63v-65.622c-.001-17.349-11.757-32.404-28.588-36.612zm-192.807-133.93c-7.468 0-14.659 1.862-21.068 5.424-6.41-3.562-13.602-5.424-21.069-5.424-10.493 0-20.209 3.667-27.799 9.927 1.692-9.252 6.005-17.83 12.641-24.903 9.49-10.116 22.356-15.686 36.227-15.686 13.826 0 26.68 5.584 36.193 15.723 6.631 7.067 10.948 15.627 12.654 24.852-7.588-6.252-17.296-9.913-27.779-9.913zm137.366 174.574h-12.611v-8.573l6.306-3.153 6.306 3.153v8.573zm-21.219-21.04c-.101.05-8.507 4.254-8.317 4.159l-4.159-12.477zm29.827 0 12.476-8.317-4.159 12.477c-.111-.056-8.825-4.414-8.317-4.16zm-45.886-143.877c3.528-3.76 8.312-5.831 13.468-5.831h35.01c5.157 0 9.94 2.071 13.468 5.832 3.528 3.76 5.29 8.665 4.961 13.812l-1.168 18.304c-3.369-2.315-6.523-4.937-9.429-7.845l-5.251-5.251c-1.407-1.406-3.314-2.196-5.303-2.196h-29.565c-1.989 0-3.896.79-5.303 2.196l-5.253 5.252c-2.906 2.907-6.06 5.528-9.428 7.843l-1.168-18.303c-.33-5.147 1.433-10.052 4.961-13.813zm-2.716 49.015c13.111-7.094 20.037-15.429 22.012-17.191h23.353l3.054 3.054c5.616 5.617 11.984 10.364 18.958 14.137l-1.292 20.243c-1.088 17.045-15.318 30.396-32.397 30.396s-31.31-13.352-32.397-30.396zm48.948 63.113c.464 3.917 1.876 7.607 4.061 10.784l-19.32 12.88-19.32-12.88c2.185-3.177 3.596-6.867 4.06-10.784 9.636 3.289 20.413 3.449 30.519 0zm-202.677 33.094 24.35 12.175-7.799 11.697-17.324-23.099zm41.632 32.28v1.422h-12.659v-1.421l6.33-9.494zm-13.654 16.421h14.649l3.784 26.488h-22.217zm26.077-24.829-7.799-11.697 24.35-12.175.773.773zm3.922-43.691c.027 2.97.493 5.888 1.376 8.675l-24.05 12.025-24.05-12.025c.881-2.783 1.348-5.697 1.376-8.663 14.377 5.797 30.686 5.909 45.348-.012zm-189.704 18.474c-.101.05-8.507 4.254-8.317 4.159l-4.158-12.476zm8.608 36.04h12.611v40.222h-12.611zm12.611-15h-12.611v-8.573l6.306-3.153 6.306 3.153v8.573zm8.608-21.04 12.476-8.317-4.159 12.477c-.175-.088-8.798-4.4-8.317-4.16zm-14.913-149.708c9.743 0 18.779 3.913 25.445 11.018 5.026 5.356 8.154 11.941 9.124 19.024-4.239-4.641-10.3-7.386-16.721-7.386h-37.085c-5.689 0-10.998 2.084-15.061 5.716 1.206-6.446 4.225-12.421 8.853-17.354 6.666-7.105 15.702-11.018 25.445-11.018zm-33.56 56.869 7.498-14.996c1.301-2.602 3.916-4.218 6.825-4.218h37.084c2.733 0 5.271 1.474 6.626 3.847l9.054 15.862-1.131 17.725c-1.087 17.045-15.318 30.396-32.397 30.396s-31.309-13.352-32.397-30.396zm48.819 61.09c.464 3.917 1.876 7.607 4.061 10.784l-19.32 12.88-19.32-12.88c2.185-3.177 3.596-6.867 4.06-10.784 9.636 3.289 20.413 3.449 30.519 0zm-90.593 48.759c0-10.454 7.083-19.526 17.226-22.062l14.765-3.691 8.617 25.85c.688 2.062 2.236 3.725 4.245 4.557 1.964.815 4.24.773 6.224-.221l2.951-1.476v56.295h-26.417v-30.73c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v30.73h-12.611zm96.639 59.252v-56.295l2.952 1.476c1.912.957 4.186 1.066 6.224.221 2.009-.832 3.558-2.494 4.245-4.557l8.617-25.85 14.765 3.691c5.18 1.295 9.701 4.404 12.807 8.615l-.658.165c-21.358 5.341-36.275 24.447-36.275 46.462v26.072zm27.676-26.072c0-15.12 10.245-28.241 24.914-31.909l29.908-7.477 23.921 31.894c.71.946 1.62 1.696 2.648 2.209l-5.17 36.188c-.261.526-.47 1.086-.617 1.675l-4.839 19.354c-3.465 1.212-6.868 2.623-10.179 4.221l-17.114-10.269c-2.957-1.772-6.648-1.505-9.3.573-1.271-.99-2.869-1.58-4.605-1.58-4.142 0-7.5 3.357-7.5 7.5v6.099l-16.292 16.292c-1.854 1.857-2.665 4.415-2.34 6.887h-3.437v-81.657zm206.269 130.219v28.519l-17.842 4.461c-2.789.691-5.043 2.829-5.885 5.581-1.544 5.051-3.588 9.982-6.077 14.655-1.35 2.536-1.271 5.641.207 8.1l9.473 15.788-20.167 20.166-15.781-9.469c-2.463-1.481-5.569-1.561-8.105-.21-4.673 2.487-9.604 4.532-14.646 6.073-2.747.835-4.888 3.083-5.588 5.874l-4.464 17.857h-28.519l-4.466-17.863c-.699-2.784-2.839-5.032-5.575-5.864-5.054-1.544-9.985-3.589-14.657-6.076-2.54-1.352-5.647-1.271-8.099.206l-15.789 9.473-20.166-20.166 9.472-15.786c1.478-2.461 1.558-5.565.208-8.101-2.488-4.674-4.533-9.605-6.077-14.659-.841-2.748-3.094-4.885-5.871-5.575l-17.855-4.464v-28.519l17.846-4.462c2.787-.692 5.04-2.829 5.881-5.58 1.544-5.051 3.588-9.982 6.077-14.655 1.347-2.53 1.27-5.63-.207-8.1l-7.224-12.04c-.031-.052-.062-.104-.094-.156l-2.155-3.592 20.166-20.166 15.797 9.479c2.462 1.473 5.564 1.549 8.09.201 4.672-2.488 9.603-4.532 14.667-6.08 2.739-.842 4.872-3.091 5.566-5.868l4.464-17.855h28.519l4.464 17.855c.694 2.775 2.825 5.024 5.578 5.872 5.054 1.544 9.984 3.588 14.656 6.076 2.528 1.347 5.625 1.27 8.099-.206l15.788-9.474 20.166 20.166c-2.225 3.709-2.179 3.63-2.241 3.734l-7.238 12.063c-1.47 2.46-1.547 5.56-.2 8.089 2.488 4.674 4.533 9.605 6.077 14.659.841 2.749 3.096 4.887 5.872 5.575zm0-48.563h-3.438c.325-2.474-.487-5.032-2.344-6.893l-16.287-16.286v-6.099c0-4.143-3.358-7.5-7.5-7.5-1.736 0-3.334.59-4.605 1.58-2.657-2.082-6.348-2.344-9.304-.572l-17.109 10.267c-3.312-1.598-6.717-3.01-10.18-4.221l-4.838-19.354c-.147-.59-.356-1.151-.618-1.678l-5.169-36.185c1.028-.513 1.939-1.264 2.649-2.21l23.921-31.891c4.947 1.237 15.113 3.778 29.909 7.477 14.669 3.667 24.914 16.788 24.914 31.909v81.656zm-21.276-128.118-.666-.167c3.098-4.21 7.608-7.312 12.815-8.613l14.765-3.691 8.616 25.85c1.449 4.346 6.414 6.366 10.469 4.336l2.952-1.476v56.295h-12.674v-26.072c-.001-22.017-14.918-41.122-36.277-46.462zm145.59 72.534h-12.611v-30.73c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v30.73h-26.417v-2.906c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v2.906h-12.611v-40.222h12.611v2.315c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-18.389l2.952 1.476c1.9.951 4.175 1.071 6.224.221 2.009-.832 3.558-2.494 4.245-4.557l8.616-25.85 14.765 3.691c10.142 2.535 17.226 11.607 17.226 22.062z" />
+                    <path
+                      d="m404.35 132.51h1.014c7.729 0 14.017-6.288 14.017-14.017v-8.544c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v7.561c-4.236 0-7.53 3.408-7.53 7.5-.001 4.142 3.357 7.5 7.499 7.5z" />
+                    <path
+                      d="m252.528 135.087c8.653 0 15.692-7.04 15.692-15.692v-10.741c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v10.741c0 .382-.311.692-.692.692h-1.275c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5z" />
+                    <path
+                      d="m256.001 331.048c-34.638 0-62.817 28.18-62.817 62.817 0 15.877 5.938 31.033 16.722 42.677 2.813 3.037 7.559 3.22 10.599.406 3.039-2.815 3.221-7.561.406-10.6-8.207-8.861-12.727-20.397-12.727-32.483 0-26.366 21.451-47.817 47.817-47.817s47.817 21.451 47.817 47.817-21.451 47.817-47.817 47.817c-3.333 0-6.662-.345-9.893-1.023-4.052-.849-8.03 1.744-8.882 5.798s1.744 8.03 5.797 8.882c4.244.892 8.61 1.344 12.978 1.344 34.638 0 62.817-28.18 62.817-62.817s-28.18-62.818-62.817-62.818z" />
+                    <path
+                      d="m251.111 416.033c1.989 0 3.897-.79 5.303-2.196l29.336-29.337c2.929-2.93 2.929-7.678 0-10.607-2.929-2.928-7.678-2.928-10.606 0l-24.033 24.034-14.254-14.255c-2.929-2.928-7.678-2.928-10.606 0-2.929 2.93-2.929 7.678 0 10.607l19.558 19.558c1.405 1.406 3.313 2.196 5.302 2.196z" />
+                  </g>
+                </svg>
+              </div>
+              <h3 class="advantage__card__title">
+                Профессионально
+              </h3>
+              <p class="advantage__card__text">
+                Опытные водители схватывают все на лету и работают быстро.
+              </p>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card__img">
+                <!-- icon666.com - MILLIONS vector ICONS FREE --><svg viewBox="0 0 480 480.00056"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m472 288h-46.695312l-43.257813-14.398438-14.046875-35.136718v-26.464844c-.054688-18.300781-13.863281-33.632812-32.054688-35.597656 0-1.097656.054688-2.195313.054688-3.289063v-117.113281c0-3.535156-2.316406-6.648438-5.703125-7.664062l-160-48c-1.5-.449219-3.09375-.449219-4.59375 0l-160 48c-3.382813 1.015624-5.703125 4.128906-5.703125 7.664062v117.113281c0 3.710938.25 7.375.382812 11.0625.203126 5.402344.503907 10.769531.984376 16.105469.082031.910156.191406 1.765625.28125 2.664062 9.824218 101.574219 71.363281 190.894532 162.777343 236.253907 2.25 1.125 4.898438 1.125 7.152344 0 11.964844-6.007813 23.519531-12.8125 34.574219-20.367188 2.511718 3.460938 5.683594 6.386719 9.335937 8.609375-7.988281 9.527344-9.734375 22.816406-4.480469 34.085938 5.253907 11.265625 16.558594 18.46875 28.992188 18.472656h136c1.582031 0 3.125-.46875 4.441406-1.34375l45.957032-30.65625h45.601562c4.417969 0 8-3.582031 8-8v-144c0-4.417969-3.582031-8-8-8zm-173.144531-39.304688 9.328125 23.304688h-46.480469c16.988281-30.472656 26.011719-64.742188 26.242187-99.632812l32.054688-9.613282v10.359375c0 1.710938-.054688 3.414063-.085938 5.128907-14.296874 5.078124-23.867187 18.585937-23.914062 33.757812v21.832031c-.003906 5.09375.964844 10.136719 2.855469 14.863281zm-114.855469 55.304688c.007812 8.171875 3.160156 16.03125 8.800781 21.945312-2.96875 2.160157-5.878906 4.398438-8.945312 6.398438l-15.855469 10.144531-15.824219-10.167969c-35.472656-22.738281-62.445312-56.558593-76.726562-96.199218l196.320312-58.898438c-1.09375 33.566406-11 66.253906-28.722656 94.777344h-27.046875c-17.671875 0-32 14.328125-32 32zm-163.65625-82.101562c-.0625-.402344-.136719-.800782-.199219-1.1875l31.792969-9.511719c.941406 4.800781 2.085938 9.601562 3.367188 14.289062l-32.25 9.679688c-1.054688-4.589844-1.925782-8.96875-2.710938-13.269531zm-3.6875-32.136719 31.640625-9.496094c.222656 5.015625.589844 10 1.167969 14.941406l-31.570313 9.472657c-.078125-.71875-.140625-1.429688-.222656-2.152344-.40625-4.125-.777344-8.3125-1.015625-12.765625zm255.34375-93.3125-208 62.398437v-57.207031l104.273438-37.238281 103.726562 29.628906zm0 16.703125v15.296875l-206.910156 62.070312c-.503906-4.96875-.816406-9.972656-.945313-15.007812zm48 17.601562v15.292969l-32 9.601563v-15.296876zm0-16.707031-32 9.601563v-15.296876l32-9.597656zm-252.671875 92.503906 130.175781-39.046875 74.496094-22.351562v15.296875l-201.375 60.414062c-1.265625-4.71875-2.394531-9.480469-3.296875-14.3125zm-51.328125-144.597656 152-45.601563 152 45.601563v20.09375l-32 9.601563v-3.648438c0-3.570312-2.367188-6.707031-5.800781-7.6875l-112-32c-1.601563-.464844-3.316407-.414062-4.886719.152344l-112 40c-3.1875 1.136718-5.3125 4.152344-5.3125 7.535156v67.648438l-32 9.601562zm152 361.070313c-68.90625-35.394532-120.046875-97.789063-141.230469-172.304688l33.335938-10c15.382812 43.304688 44.726562 80.261719 83.414062 105.058594l20.152344 12.953125c2.636719 1.695312 6.019531 1.695312 8.65625 0l20.152344-12.953125.207031-.136719c-2.816406 13.273437 3.148438 26.863281 14.824219 33.777344-4.855469 5.757812-7.515625 13.050781-7.511719 20.582031.015625 1.113281.089844 2.222656.222656 3.328125-10.289062 7.277344-21.050781 13.859375-32.222656 19.695313zm205.601562 40.976562h-133.601562c-8.835938 0-16-7.164062-16-16-.015625-8.304688 6.386719-15.214844 14.671875-15.832031 4.300781-.445313 7.507813-4.160157 7.320313-8.480469-.167969-4.296875-3.699219-7.691406-8-7.6875h-5.992188c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-8c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8h-8c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16h104c2.65625.003906 5.140625-1.3125 6.628906-3.515625 1.492188-2.199219 1.792969-4.992187.804688-7.460937l-13.714844-34.269532c-1.140625-2.835937-1.722656-5.863281-1.71875-8.921875v-21.832031c0-11.046875 8.953125-20 20-20s20 8.953125 20 20v28c0 1.019531.195312 2.027344.566406 2.976562l16 40c.882813 2.179688 2.675782 3.867188 4.90625 4.617188l42.527344 14.175781v133.949219zm90.398438-32h-32v-128h32zm0 0" />
+                  <path
+                    d="m420.960938 102.71875-10.9375 11.683594c3.652343 3.417968 7.085937 7.0625 10.28125 10.910156l12.304687-10.230469c-3.621094-4.359375-7.511719-8.488281-11.648437-12.363281zm0 0" />
+                  <path
+                    d="m464 201.992188c0-3.136719-.105469-6.242188-.320312-9.320313l-15.960938 1.082031c.183594 2.71875.277344 5.464844.28125 8.238282 0 2.265624-.0625 4.519531-.191406 6.753906l16 .917968c.128906-2.542968.191406-5.101562.191406-7.671874zm0 0" />
+                  <path
+                    d="m407.878906 91.914062c-4.585937-3.335937-9.375-6.382812-14.34375-9.121093l-7.71875 14.007812c4.378906 2.402344 8.601563 5.074219 12.648438 8zm0 0" />
+                  <path
+                    d="m461.792969 226.511719-15.746094-2.863281c-.890625 4.917968-2.09375 9.773437-3.597656 14.535156l15.246093 4.800781c1.710938-5.398437 3.078126-10.898437 4.097657-16.472656zm0 0" />
+                  <path
+                    d="m378.160156 75.535156c-5.273437-2.09375-10.671875-3.851562-16.167968-5.261718l-4 15.496093c4.84375 1.25 9.605468 2.796875 14.257812 4.640625zm0 0" />
+                  <path
+                    d="m433 260.121094 14 7.757812c1.601562-2.933594 3.199219-5.941406 4.566406-9.023437l-14.527344-6.6875c-1.226562 2.703125-2.570312 5.355469-4.039062 7.953125zm0 0" />
+                  <path
+                    d="m429.160156 137.410156c2.6875 4.207032 5.113282 8.578125 7.265625 13.085938l14.445313-6.863282c-2.433594-5.117187-5.183594-10.078124-8.238282-14.847656zm0 0" />
+                  <path
+                    d="m442 164.390625c1.558594 4.746094 2.820312 9.585937 3.777344 14.488281l15.703125-3.046875c-1.082031-5.566406-2.511719-11.0625-4.289063-16.449219zm0 0" />
+                  <path
+                    d="m359.886719 152.578125c19.441406 7.699219 32.179687 26.515625 32.113281 47.421875h16c.09375-27.457031-16.640625-52.167969-42.167969-62.28125l-2.855469-1.140625-5.953124 14.847656zm0 0" />
+                </svg>
+              </div>
+              <h3 class="advantage__card__title">
+                Надежно
+              </h3>
+              <p class="advantage__card__text">
+                Заключаем договор и сразу же начинаем работу.
+              </p>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card__img">
+                <!-- icon666.com - MILLIONS vector ICONS FREE --><svg version="1.1" id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 263.285 263.285" style="enable-background:new 0 0 263.285 263.285;" xml:space="preserve">
+                  <g>
+                    <path
+                      d="M193.882,8.561c-7.383-3.756-16.414-0.813-20.169,6.573L62.153,234.556c-3.755,7.385-0.812,16.414,6.573,20.169 c2.178,1.107,4.499,1.632,6.786,1.632c5.466,0,10.735-2.998,13.383-8.205L200.455,28.73 C204.21,21.345,201.267,12.316,193.882,8.561z" />
+                    <path
+                      d="M113.778,80.818c0-31.369-25.521-56.89-56.89-56.89C25.521,23.928,0,49.449,0,80.818c0,31.368,25.521,56.889,56.889,56.889 C88.258,137.707,113.778,112.186,113.778,80.818z M56.889,107.707C42.063,107.707,30,95.644,30,80.818 c0-14.827,12.063-26.89,26.889-26.89c14.827,0,26.89,12.062,26.89,26.89C83.778,95.644,71.716,107.707,56.889,107.707z" />
+                    <path
+                      d="M206.396,125.58c-31.369,0-56.89,25.521-56.89,56.889c0,31.368,25.52,56.889,56.89,56.889 c31.368,0,56.889-25.52,56.889-56.889C263.285,151.1,237.765,125.58,206.396,125.58z M206.396,209.357 c-14.827,0-26.89-12.063-26.89-26.889c0-14.826,12.063-26.889,26.89-26.889c14.826,0,26.889,12.063,26.889,26.889 C233.285,197.294,221.223,209.357,206.396,209.357z" />
+                  </g>
+                </svg>
+              </div>
+              <h3 class="advantage__card__title">
+                Скидки
+              </h3>
+              <p class="advantage__card__text">
+                Для постоянных клиентов компании действуют скидки.
+              </p>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card__img">
+                <!-- icon666.com - MILLIONS vector ICONS FREE --><svg viewBox="0 -40 512.00232 512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m507.527344 131.597656-129.144532-127.28125c-5.871093-5.785156-15.308593-5.75-21.136718.078125l-50.03125 50.234375c-14.863282 0-87.585938 0-102.425782 0l-50.035156-50.234375c-5.828125-5.828125-15.265625-5.863281-21.136718-.078125l-129.144532 127.28125c-2.878906 2.835938-4.4921872 6.714844-4.472656 10.753906.0195312 4.042969 1.667969 7.902344 4.574219 10.710938l51.722656 50.003906v6.367188c0 18.171875 5.574219 35.472656 15.875 50-14.15625 17.613281-13.15625 43.484375 3.304687 59.945312 7.910157 7.910156 18.25 12.515625 29.335938 13.113282.589844 10.675781 4.953125 21.175781 13.089844 29.3125 8.140625 8.144531 18.65625 12.5 29.339844 13.085937.585937 10.683594 4.941406 21.195313 13.085937 29.339844 15.988281 15.988281 41.222656 17.476562 58.9375 4.082031l10.964844 10.964844c8.816406 8.820312 20.398437 13.226562 31.984375 13.226562 11.582031 0 23.167968-4.410156 31.984375-13.226562 4.074219-4.074219 7.191406-8.761719 9.375-13.777344 17.292969 9.851562 39.539062 7.289062 54.101562-7.269531 8.140625-8.144531 12.5-18.65625 13.082031-29.34375 10.683594-.582031 21.199219-4.941407 29.34375-13.082031 7.910157-7.914063 12.507813-18.257813 13.109376-29.34375 10.675781-.589844 21.179687-4.945313 29.316406-13.082032 8.5-8.5 13.179687-19.800781 13.179687-31.820312 0-10.492188-3.566406-20.433594-10.125-28.441406 6.585938-10.449219 10.125-22.546876 10.125-35.199219v-14.851563l51.722657-50.003906c2.902343-2.808594 4.554687-6.667969 4.574218-10.710938.015625-4.039062-1.597656-7.917968-4.476562-10.753906zm-471.054688 10.578125 107.597656-106.039062 43.898438 43.898437c2.8125 2.8125 6.625 4.390625 10.605469 4.390625h45.777343l74.796876 74.796875c5.859374 5.859375 5.863281 15.347656 0 21.207032-5.847657 5.847656-15.363282 5.847656-21.210938 0l-29.921875-29.917969c-23.769531-23.769531-62.441406-24.324219-86.8125-.476563l-31.621094-31.621094c-5.855469-5.859374-15.355469-5.859374-21.210937 0-5.859375 5.859376-5.859375 15.355469 0 21.214844l31.605468 31.605469-66.261718 66.261719c-4.832032-8.457032-7.421875-18.058594-7.421875-28.0625 0-12.714844 1.042969-18.082032-4.574219-23.511719zm236.511719 255.890625c-5.9375 5.9375-15.601563 5.9375-21.542969 0l-10.652344-10.65625 21.710938-21.710937c11.164062 11.519531 3.71875 4.714843 12.753906 13.75 3.5 5.855469 2.742188 13.605469-2.269531 18.617187zm63.476563-21.046875c-5.851563 5.847657-15.367188 5.847657-21.214844 0-26.789063-26.789062 2.703125 2.785157-23.609375-24.363281-3.292969-5.714844-2.53125-13.136719 2.394531-18.0625 5.847656-5.847656 15.367188-5.851562 21.214844 0l21.214844 21.210938c5.847656 5.847656 5.847656 15.367187 0 21.214843zm42.425781-42.425781c-5.847657 5.847656-15.367188 5.847656-21.214844 0l-42.425781-42.429688c-5.863282-5.863281-5.863282-15.347656 0-21.210937 5.847656-5.847656 15.363281-5.847656 21.214844 0l42.425781 42.425781c5.863281 5.863282 5.863281 15.351563 0 21.214844zm42.425781-42.429688c-5.847656 5.847657-15.363281 5.851563-21.214844 0l-21.210937-21.210937c-5.863281-5.863281-5.863281-15.351563 0-21.214844 5.847656-5.847656 15.363281-5.847656 21.214843 0 5.148438 5.148438 15.882813 15.886719 21.210938 21.214844 5.847656 5.847656 5.847656 15.363281 0 21.210937zm8.96875-106.242187c-2.925781 2.828125-4.574219 6.71875-4.574219 10.785156v21.210938c0 4.410156-.792969 8.699219-2.292969 12.710937l-2.101562-2.101562c-17.542969-17.546875-46.09375-17.546875-63.640625 0-4.082031 4.082031-7.273437 8.816406-9.5 13.964844-17.179687-9.808594-39.492187-7.398438-54.140625 7.246093-14.796875 14.796875-17.035156 37.117188-7.246094 54.167969-6.527344 2.8125-13.054687 8.136719-14.179687 9.257812-10.863281 10.863282-59.46875 59.46875-69.851563 69.855469-5.851562 5.847657-15.367187 5.847657-21.214844 0-5.847656-5.851562-5.847656-15.363281 0-21.214843 3.738282-3.738282 37.105469-37.101563 42.425782-42.425782 5.859375-5.859375 5.859375-15.355468 0-21.214844-5.855469-5.859374-15.355469-5.859374-21.210938 0-5.332031 5.332032-38.070312 38.070313-42.425781 42.425782-5.847656 5.851562-15.363281 5.851562-21.214844 0-5.847656-5.847656-5.847656-15.363282 0-21.210938l42.429688-42.429687c5.855469-5.855469 5.855469-15.355469 0-21.210938-5.859375-5.859375-15.359375-5.859375-21.214844 0l-42.425781 42.425781c-5.863282 5.863282-15.351563 5.863282-21.214844 0-5.863281-5.863281-5.863281-15.347656 0-21.210937 12.488281-12.488281 92.789062-92.789063 105.230469-105.230469 12.402343-12.402344 32.480469-12.40625 44.886719 0l29.921874 29.921875c17.5625 17.558594 46.105469 17.527344 63.636719 0 8.496094-8.5 13.179688-19.796875 13.179688-31.816406s-4.683594-23.320313-13.179688-31.820313l-53.585937-53.582031h26.652344c3.976562 0 7.792968-1.582031 10.605468-4.394531l43.894532-43.894531 107.597656 106.039062zm0 0" />
+                </svg>
+              </div>
+              <h3 class="advantage__card__title">
+                Без посредников
+              </h3>
+              <p class="advantage__card__text">
+                У нас собственный автопарк, поэтому мы уверены в своих машинах.
+              </p>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card__img">
+                <!-- icon666.com - MILLIONS vector ICONS FREE --><svg id="Capa_1" enable-background="new 0 0 512 512"
+                  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path
+                      d="m512 256c0-140.96-115.049-256-256-256-30.793 0-62.427 6.358-94.024 18.899-7.7 3.056-11.465 11.775-8.409 19.476 3.057 7.7 11.777 11.465 19.476 8.409 28.059-11.138 55.97-16.784 82.957-16.784 124.617 0 226 101.383 226 226 0 58-22.454 112.865-62.508 154.722v-6.23c0-8.284-6.716-15-15-15s-15 6.716-15 15v42.427c0 8.284 6.716 15 15 15h42.427c8.284 0 15-6.716 15-15s-6.716-15-15-15h-6.294c45.111-47.133 71.375-109.211 71.375-175.919z" />
+                    <path
+                      d="m338.958 465.217c-28.06 11.137-55.971 16.783-82.958 16.783-124.617 0-226-101.383-226-226 0-58 22.454-112.865 62.508-154.722v6.23c0 8.284 6.716 15 15 15s15-6.716 15-15v-42.427c0-8.284-6.716-15-15-15h-42.427c-8.284 0-15 6.716-15 15s6.716 15 15 15h6.294c-45.112 47.134-71.375 109.211-71.375 175.919 0 140.959 115.049 256 256 256 30.793 0 62.428-6.358 94.024-18.899 7.7-3.056 11.465-11.776 8.409-19.476-3.057-7.7-11.778-11.463-19.475-8.408z" />
+                    <path
+                      d="m61 226c0 8.284 6.716 15 15 15s15-6.716 15-15c0-8.271 6.729-15 15-15s15 6.729 15 15c0 14.303-8.672 21.504-24 33-16.039 12.029-36 27-36 57 0 8.284 6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15h-40.607c4.012-6.044 10.667-11.295 19.607-18 16.039-12.029 36-27 36-57 0-24.813-20.187-45-45-45s-45 20.187-45 45z" />
+                    <path
+                      d="m196 181c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15h45v45c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15s-15 6.716-15 15v45h-30v-45c0-8.284-6.716-15-15-15z" />
+                    <path
+                      d="m391.448 312.362c-2.01 8.037 2.877 16.181 10.914 18.19 8.004 2.001 16.173-2.845 18.189-10.914l30-120c2.374-9.506-4.917-18.638-14.551-18.638h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h40.789z" />
+                    <path
+                      d="m323.384 317.861 15-120c1.028-8.22-4.803-15.717-13.023-16.745-8.227-1.027-15.717 4.804-16.744 13.024l-15 120c-1.028 8.22 4.803 15.717 13.023 16.745 8.219 1.025 15.716-4.802 16.744-13.024z" />
+                  </g>
+                </svg>
+              </div>
+              <h3 class="advantage__card__title">
+                Всегда рядом
+              </h3>
+              <p class="advantage__card__text">
+                Мы работаем круглосуточнобез праздников и выходных.
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <section class="easy">
+        <div class="container">
+          <h2 class="easy__title section-title">С Нами Легко!</h2>
+          <h3 class="easy__title2">Заказать Бетон или Автобетононасос в нашей компании проще простого.<br> От
+            качественной
+            техники и продукции вас отделяет всего три шага!</h3>
+          <div class="easy__content">
+            <div class="easy__content__card1">
+              <span class="easystep">
+                1
+              </span>
+              <div class="easy__text">
+                <h2 class="easy__text__title">Вы оставляете заявку на сайте или по телефону</h2>
+                <p class="easy__text__text">Это очень просто. Нужно указать только номер телефона и ваше имя.</p>
+              </div>
+            </div>
+
+            <div class="easy__content__card2">
+              <span class="easystep">
+                2
+              </span>
+              <div class="easy__text">
+                <h2 class="easy__text__title">Мы перезваниваем и уточняем детали</h2>
+                <p class="easy__text__text">Наш менеджер перезвонит для уточнения всех деталей.</p>
+              </div>
+            </div>
+
+            <div class="easy__content__card3">
+              <span class="easystep">
+                3
+              </span>
+              <div class="easy__text">
+                <h2 class="easy__text__title">Заключаем договор и доставляем Бетон или технику, по вашему заказу</h2>
+                <p class="easy__text__text">после заключения договора и оплаты услуг, мы исполняем наши договоренности.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="nasos" id="nasos">
+        <div class="container">
+          <h2 class="nasos__title section-title">Автобетононасосы</h2>
+          <h3 class="nasos__title2">Цены и характеристики</h3>
+          <div class="nasos__content">
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="card">
+                    <img class="card__background" src="/img/32.jpg"
+                      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                      height="2193" />
+                    <div class="card__content | flow">
+                      <div class="card__content--container | flow">
+                        <h2 class="card__title">Автобетононасос 32м</h2>
+
+                        <ul class="card__description list-reset">
+                          <li>Высота подачи: 30,5 м</li>
+                          <li>Дальность подачи: 26,6 м</li>
+                          <li>Размер площадки: 6х10 м</li>
+                        </ul>
+                      </div>
+                      <button class="card__button btn" id="myBtn26">Узнать стоимость</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <img class="card__background" src="/img/36.jpg"
+                      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                      height="2193" />
+                    <div class="card__content | flow">
+                      <div class="card__content--container | flow">
+                        <h2 class="card__title">Автобетононасос 36м</h2>
+
+                        <ul class="card__description list-reset">
+                          <li>Высота подачи: 35,6 м</li>
+                          <li>Дальность подачи: 31,4 м</li>
+                          <li>Размер площадки: 8х11 м</li>
+                        </ul>
+                      </div>
+                      <button class="card__button btn" id="myBtn27">Узнать стоимость</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <img class="card__background" src="/img/42.jpg"
+                      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                      height="2193" />
+                    <div class="card__content | flow">
+                      <div class="card__content--container | flow">
+                        <h2 class="card__title">Автобетононасос 42м</h2>
+
+                        <ul class="card__description list-reset">
+                          <li>Высота подачи: 41.6 м</li>
+                          <li>Дальность подачи: 37.6 м</li>
+                          <li>Размер площадки: 8х11 м</li>
+                        </ul>
+                      </div>
+                      <button class="card__button btn" id="myBtn28">Узнать стоимость</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <img class="card__background" src="/img/46.jpg"
+                      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                      height="2193" />
+                    <div class="card__content | flow">
+                      <div class="card__content--container | flow">
+                        <h2 class="card__title">Автобетононасос 46м</h2>
+
+                        <ul class="card__description list-reset">
+                          <li>Высота подачи: 45.6 м</li>
+                          <li>Дальность подачи: 41.6 м</li>
+                          <li>Размер площадки: 12х12 м</li>
+                        </ul>
+                      </div>
+                      <button class="card__button btn" id="myBtn29">Узнать стоимость</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <img class="card__background" src="/img/52.jpg"
+                      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                      height="2193" />
+                    <div class="card__content | flow">
+                      <div class="card__content--container | flow">
+                        <h2 class="card__title">Автобетононасос 52м</h2>
+
+                        <ul class="card__description list-reset">
+                          <li>Высота подачи: 51.6 м</li>
+                          <li>Дальность подачи: 48.6 м</li>
+                          <li>Размер площадки: 12х14 м</li>
+                        </ul>
+                      </div>
+                      <button class="card__button btn" id="myBtn30">Узнать стоимость</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card">
+                    <img class="card__background" src="/img/62.jpg"
+                      alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                      height="2193" />
+                    <div class="card__content | flow">
+                      <div class="card__content--container | flow">
+                        <h2 class="card__title">Автобетононасос 62м</h2>
+
+                        <ul class="card__description list-reset">
+                          <li>Высота подачи: 61.6 м</li>
+                          <li>Дальность подачи: 57.6 м</li>
+                          <li>Размер площадки: 14х14 м</li>
+                        </ul>
+                      </div>
+                      <button class="card__button btn" id="myBtn31">Узнать стоимость</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+
+            </div>
+            <div class="nasos__content__info">
+              <h2 class="nasos__content__info__title section-title">ТРЕБОВАНИЯ ДЛЯ БЕЗОПАСНОЙ РАБОТЫ
+                АБН(АВТОБЕТОНОНАСОС)
+                НА ОБЪЕКТЕ</h2>
+              <ul>
+                <li>Свободный подъезд и площадка с твердым грунтом</li>
+                <li>Площадка c площадью 6х10 метров для установки техники с опорами</li>
+                <li>Наличие воды - не менее 1 м/куб</li>
+                <li>Место для слива воды после промывки насоса: 0,5-1 м/куб</li>
+                <li>Промежутки между подачами смеси не должны быть больше 30 минут</li>
+                <li>Бетонная смесь Соответствует ГОСТу</li>
+                <li>Минимальная температура воздуха для работы АБН - до -25°C</li>
+              </ul>
+            </div>
+            <div class="nasos__content__info1">
+              <h2 class="nasos__content__info__title section-title">
+                РЕЖИМ РАБОТЫ АВТОБЕТОНОНАСОСА НА ОБЪЕКТЕ
+              </h2>
+              <ul>
+                <li>Минимальное время работы техники — 7 часов работы + 1 час подачи</li>
+                <li>Начало смены считается от времени прибытия техники на объект</li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title section-title">Контакты</h2>
+          <div class="contacts__content">
+            <ul class="contacrs__content__list list-reset">
+              <li class="contacts__content__item">
+                <h3 class="contacts__content__item__title">ООО «БетонМикс»</h3>
+              </li>
+              <li class="contacts__content__item">
+                Юр. адрес: 125466, г. Москва, ш. Новокуркинское, д.51, помещ. 33/1, ком. 1.
+              </li>
+              <li class="contacts__content__item">
+                Факт. Адрес : г.Москва 3-й угрешский проезд д.6 стр. 1
+              </li>
+              <li class="contacts__content__item">
+                ИНН: 7733409936
+              </li>
+              <li class="contacts__content__item">
+                КПП: 773301001
+              </li>
+              <li class="contacts__content__item">
+                тел:
+                <a href="tel:+7(499)322-77-88">
+                  +7(499)322-77-88
+                </a>
+              </li>
+              <li class="contacts__content__item">
+                E-mail:
+                <a href="mailto:buh-betonmix@mail.ru">
+                  buh-betonmix@mail.ru
+                </a>
+
+              </li>
             </ul>
 
           </div>
 
         </div>
-      </div>
-    </section>
 
-    <section class="contacts" id="contacts">
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
-        <h2 class="contacts__title section-title">Контакты</h2>
-        <div class="contacts__content">
-          <ul class="contacrs__content__list list-reset">
-            <li class="contacts__content__item">
-              <h3 class="contacts__content__item__title">ООО «БетонМикс»</h3>
-            </li>
-            <li class="contacts__content__item">
-              Юр. адрес: 125466, г. Москва, ш. Новокуркинское, д.51, помещ. 33/1, ком. 1.
-            </li>
-            <li class="contacts__content__item">
-              Факт. Адрес : г.Москва 3-й угрешский проезд д.6 стр. 1
-            </li>
-            <li class="contacts__content__item">
-              ИНН: 7733409936
-            </li>
-            <li class="contacts__content__item">
-              КПП: 773301001
-            </li>
-            <li class="contacts__content__item">
-              тел:
-              <a href="tel:+7(499)322-77-88">
-                +7(499)322-77-88
-              </a>
-            </li>
-            <li class="contacts__content__item">
-              E-mail:
-              <a href="mailto:buh-betonmix@mail.ru">
-                buh-betonmix@mail.ru
-              </a>
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img src="/img/betonmix.png" alt="логотип">
+          </div>
 
-            </li>
-          </ul>
+
+          <div class="header__contact">
+            <a href="tel:+7(499)322-77-88" class="header__contact__tel btn">
+              +7(499)322-77-88
+            </a>
+            <a href="mailto:buh-betonmix@mail.ru" class="header__contact__mail">
+              buh-betonmix@mail.ru
+            </a>
+          </div>
+
+
+
+          <div class="footer__social">
+            <a href="#" class="footer__social__link">
+              <svg class="footer__social__link__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 409.61 409.61"
+                style="enable-background:new 0 0 409.61 409.61;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M307.205,0h-204.8C46.09,0,0.005,46.085,0.005,102.4v204.81c0,56.3,46.085,102.4,102.4,102.4h204.8 c56.315,0,102.4-46.1,102.4-102.4V102.4C409.605,46.085,363.52,0,307.205,0z M375.47,307.21c0,37.632-30.612,68.265-68.265,68.265 h-204.8c-37.637,0-68.265-30.633-68.265-68.265V102.4c0-37.642,30.628-68.265,68.265-68.265h204.8 c37.653,0,68.265,30.623,68.265,68.265V307.21z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <circle cx="315.755" cy="93.865" r="25.6" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M204.805,102.4c-56.566,0-102.4,45.839-102.4,102.4c0,56.54,45.834,102.41,102.4,102.41c56.55,0,102.4-45.87,102.4-102.41 C307.205,148.239,261.355,102.4,204.805,102.4z M204.805,273.075c-37.699,0-68.265-30.566-68.265-68.275 s30.566-68.265,68.265-68.265s68.265,30.556,68.265,68.265S242.504,273.075,204.805,273.075z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="#" class="footer__social__link">
+              <svg class="footer__social__link__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 308 308"
+                style="enable-background:new 0 0 308 308;" xml:space="preserve">
+                <g id="XMLID_468_">
+                  <path id="XMLID_469_"
+                    d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z" />
+                  <path id="XMLID_470_"
+                    d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z" />
+                </g>
+              </svg>
+            </a>
+            <a href="#" class="footer__social__link">
+              <svg class="footer__social__link__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                style="enable-background:new 0 0 300 300;" xml:space="preserve">
+                <g id="XMLID_496_">
+                  <path id="XMLID_497_"
+                    d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" />
+                </g>
+              </svg>
+            </a>
+
+          </div>
+
 
         </div>
-
-      </div>
-
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__content">
-        <div class="footer__logo">
-          <img src="/img/betonmix.png" alt="логотип">
-        </div>
-
-
-        <div class="header__contact">
-          <a href="tel:+7(499)322-77-88" class="header__contact__tel btn">
-            +7(499)322-77-88
-          </a>
-          <a href="mailto:buh-betonmix@mail.ru" class="header__contact__mail">
-            buh-betonmix@mail.ru
-          </a>
-        </div>
-
-
-
-        <div class="footer__social">
-          <a href="#" class="footer__social__link">
-            <svg class="footer__social__link__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 409.61 409.61"
-              style="enable-background:new 0 0 409.61 409.61;" xml:space="preserve">
-              <g>
-                <g>
-                  <path
-                    d="M307.205,0h-204.8C46.09,0,0.005,46.085,0.005,102.4v204.81c0,56.3,46.085,102.4,102.4,102.4h204.8 c56.315,0,102.4-46.1,102.4-102.4V102.4C409.605,46.085,363.52,0,307.205,0z M375.47,307.21c0,37.632-30.612,68.265-68.265,68.265 h-204.8c-37.637,0-68.265-30.633-68.265-68.265V102.4c0-37.642,30.628-68.265,68.265-68.265h204.8 c37.653,0,68.265,30.623,68.265,68.265V307.21z" />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <circle cx="315.755" cy="93.865" r="25.6" />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path
-                    d="M204.805,102.4c-56.566,0-102.4,45.839-102.4,102.4c0,56.54,45.834,102.41,102.4,102.41c56.55,0,102.4-45.87,102.4-102.41 C307.205,148.239,261.355,102.4,204.805,102.4z M204.805,273.075c-37.699,0-68.265-30.566-68.265-68.275 s30.566-68.265,68.265-68.265s68.265,30.556,68.265,68.265S242.504,273.075,204.805,273.075z" />
-                </g>
-              </g>
-            </svg>
-          </a>
-          <a href="#" class="footer__social__link">
-            <svg class="footer__social__link__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 308 308"
-              style="enable-background:new 0 0 308 308;" xml:space="preserve">
-              <g id="XMLID_468_">
-                <path id="XMLID_469_"
-                  d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z" />
-                <path id="XMLID_470_"
-                  d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z" />
-              </g>
-            </svg>
-          </a>
-          <a href="#" class="footer__social__link">
-            <svg class="footer__social__link__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
-              style="enable-background:new 0 0 300 300;" xml:space="preserve">
-              <g id="XMLID_496_">
-                <path id="XMLID_497_"
-                  d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" />
-              </g>
-            </svg>
-          </a>
+        <div class="footer__bottom">
+          <h3 class="footer__bottom__title">2023 ООО «БетонМикс» - Доставка бетона по Москве и Московской области.</h3>
 
         </div>
 
 
       </div>
-      <div class="footer__bottom">
-        <h3 class="footer__bottom__title">2023 ООО «БетонМикс» - Доставка бетона по Москве и Московской области.</h3>
-
-      </div>
 
 
+    </footer>
+
+
+
+
+
+
+
+
+    <div id="myModal" class="modal">
+      <form class="form modal-content" id="tg">
+        <span class="close">&times;</span>
+        <div class="title">Заказать Бетон</div>
+        <div class="subtitle">Введите информацию и оператор вам презвонит в течении пяти минут</div>
+        <div class="input-container ic1">
+          <input id="firstname" class="input" type="text" name="name" placeholder=" " />
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder">Введите Имя</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="lastname" class="input" type="text" name="tel" placeholder=" " />
+          <div class="cut"></div>
+          <label for="lastname" class="placeholder">Введите Телефон</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="email" class="input" type="text" name="info" placeholder=" " />
+          <div class="cut "></div>
+          <label for="email" class="placeholder">Кратко, что нужно</label>
+        </div>
+
+        <button type="text" class="btn form__btn">Отправить</button>
+      </form>
     </div>
 
 
-  </footer>
+    <script>
+      var modal = document.getElementById('myModal');
 
-
-
-
-
-
-
-
-  <div id="myModal" class="modal">
-    <form class="form modal-content" id="tg">
-      <span class="close">&times;</span>
-      <div class="title">Заказать Бетон</div>
-      <div class="subtitle">Введите информацию и оператор вам презвонит в течении пяти минут</div>
-      <div class="input-container ic1">
-        <input id="firstname" class="input" type="text" name="name" placeholder=" " />
-        <div class="cut"></div>
-        <label for="firstname" class="placeholder">Введите Имя</label>
-      </div>
-      <div class="input-container ic2">
-        <input id="lastname" class="input" type="text" name="tel" placeholder=" " />
-        <div class="cut"></div>
-        <label for="lastname" class="placeholder">Введите Телефон</label>
-      </div>
-      <div class="input-container ic2">
-        <input id="email" class="input" type="text" name="info" placeholder=" " />
-        <div class="cut "></div>
-        <label for="email" class="placeholder">Кратко, что нужно</label>
-      </div>
-
-      <button type="text" class="btn form__btn">Отправить</button>
-    </form>
-  </div>
-
-
-  <script>
-    var modal = document.getElementById('myModal');
-
-    var myBtn = document.getElementsByClassName('myBtn');
-    var close = document.getElementsByClassName('close')[0];
-    /*
-    А это в цикле прокруциваем те элементы которыми мы открываем модал окно
-    и обработчик события который открывет окно
-    */
-    for (var i = 0; i < myBtn.length; i++) {
-      myBtn[i].addEventListener('click', function () {
-        openModalWindow();
+      var myBtn = document.getElementsByClassName('myBtn');
+      var close = document.getElementsByClassName('close')[0];
+      /*
+      А это в цикле прокруциваем те элементы которыми мы открываем модал окно
+      и обработчик события который открывет окно
+      */
+      for (var i = 0; i < myBtn.length; i++) {
+        myBtn[i].addEventListener('click', function () {
+          openModalWindow();
+        })
+      }
+      // это обработчик события, который в нутри этой функции выполнят ту функцию
+      //которая закрывает окно модальное
+      close.addEventListener('click', function () {
+        closeModalWindow();
       })
-    }
-    // это обработчик события, который в нутри этой функции выполнят ту функцию
-    //которая закрывает окно модальное
-    close.addEventListener('click', function () {
-      closeModalWindow();
-    })
 
-    //это функция, которая открывает окно
-    function openModalWindow() {
-      modal.style.display = "block";
-    }
+      //это функция, которая открывает окно
+      function openModalWindow() {
+        modal.style.display = "block";
+      }
 
-    //это функция, которая закрывает окно
-    function closeModalWindow() {
-      modal.style.display = "none";
-    }
+      //это функция, которая закрывает окно
+      function closeModalWindow() {
+        modal.style.display = "none";
+      }
 
-    var btn1 = document.getElementById("myBtn1");
-    var btn2 = document.getElementById("myBtn2");
-    var btn3 = document.getElementById("myBtn3");
-    var btn4 = document.getElementById("myBtn4");
-    var btn5 = document.getElementById("myBtn5");
-    var btn6 = document.getElementById("myBtn6");
-    var btn7 = document.getElementById("myBtn7");
-    var btn8 = document.getElementById("myBtn8");
-    var btn9 = document.getElementById("myBtn9");
-    var btn10 = document.getElementById("myBtn10");
-    var btn11 = document.getElementById("myBtn11");
-    var btn12 = document.getElementById("myBtn12");
-    var btn13 = document.getElementById("myBtn13");
-    var btn14 = document.getElementById("myBtn14");
-    var btn15 = document.getElementById("myBtn15");
-    var btn16 = document.getElementById("myBtn16");
-    var btn17 = document.getElementById("myBtn17");
-    var btn18 = document.getElementById("myBtn18");
-    var btn19 = document.getElementById("myBtn19");
-    var btn20 = document.getElementById("myBtn20");
-    var btn21 = document.getElementById("myBtn21");
-    var btn22 = document.getElementById("myBtn22");
-    var btn23 = document.getElementById("myBtn23");
-    var btn24 = document.getElementById("myBtn24");
-    var btn25 = document.getElementById("myBtn25");
-    var btn26 = document.getElementById("myBtn26");
-    var btn27 = document.getElementById("myBtn27");
-    var btn28 = document.getElementById("myBtn28");
-    var btn29 = document.getElementById("myBtn29");
-    var btn30 = document.getElementById("myBtn30");
-    var btn31 = document.getElementById("myBtn31");
+      var btn1 = document.getElementById("myBtn1");
+      var btn2 = document.getElementById("myBtn2");
+      var btn3 = document.getElementById("myBtn3");
+      var btn4 = document.getElementById("myBtn4");
+      var btn5 = document.getElementById("myBtn5");
+      var btn6 = document.getElementById("myBtn6");
+      var btn7 = document.getElementById("myBtn7");
+      var btn8 = document.getElementById("myBtn8");
+      var btn9 = document.getElementById("myBtn9");
+      var btn10 = document.getElementById("myBtn10");
+      var btn11 = document.getElementById("myBtn11");
+      var btn12 = document.getElementById("myBtn12");
+      var btn13 = document.getElementById("myBtn13");
+      var btn14 = document.getElementById("myBtn14");
+      var btn15 = document.getElementById("myBtn15");
+      var btn16 = document.getElementById("myBtn16");
+      var btn17 = document.getElementById("myBtn17");
+      var btn18 = document.getElementById("myBtn18");
+      var btn19 = document.getElementById("myBtn19");
+      var btn20 = document.getElementById("myBtn20");
+      var btn21 = document.getElementById("myBtn21");
+      var btn22 = document.getElementById("myBtn22");
+      var btn23 = document.getElementById("myBtn23");
+      var btn24 = document.getElementById("myBtn24");
+      var btn25 = document.getElementById("myBtn25");
+      var btn26 = document.getElementById("myBtn26");
+      var btn27 = document.getElementById("myBtn27");
+      var btn28 = document.getElementById("myBtn28");
+      var btn29 = document.getElementById("myBtn29");
+      var btn30 = document.getElementById("myBtn30");
+      var btn31 = document.getElementById("myBtn31");
 
-    function OpenModal() {
-      modal.style.display = "block";
-    }
+      function OpenModal() {
+        modal.style.display = "block";
+      }
 
-    btn1.onclick = OpenModal;
-    btn2.onclick = OpenModal;
-    btn3.onclick = OpenModal;
-    btn4.onclick = OpenModal;
-    btn5.onclick = OpenModal;
-    btn6.onclick = OpenModal;
-    btn7.onclick = OpenModal;
-    btn8.onclick = OpenModal;
-    btn9.onclick = OpenModal;
-    btn10.onclick = OpenModal;
-    btn11.onclick = OpenModal;
-    btn12.onclick = OpenModal;
-    btn13.onclick = OpenModal;
-    btn14.onclick = OpenModal;
-    btn15.onclick = OpenModal;
-    btn16.onclick = OpenModal;
-    btn17.onclick = OpenModal;
-    btn18.onclick = OpenModal;
-    btn19.onclick = OpenModal;
-    btn20.onclick = OpenModal;
-    btn21.onclick = OpenModal;
-    btn22.onclick = OpenModal;
-    btn23.onclick = OpenModal;
-    btn24.onclick = OpenModal;
-    btn25.onclick = OpenModal;
-    btn26.onclick = OpenModal;
-    btn27.onclick = OpenModal;
-    btn28.onclick = OpenModal;
-    btn29.onclick = OpenModal;
-    btn30.onclick = OpenModal;
-    btn31.onclick = OpenModal;
-  </script>
+      btn1.onclick = OpenModal;
+      btn2.onclick = OpenModal;
+      btn3.onclick = OpenModal;
+      btn4.onclick = OpenModal;
+      btn5.onclick = OpenModal;
+      btn6.onclick = OpenModal;
+      btn7.onclick = OpenModal;
+      btn8.onclick = OpenModal;
+      btn9.onclick = OpenModal;
+      btn10.onclick = OpenModal;
+      btn11.onclick = OpenModal;
+      btn12.onclick = OpenModal;
+      btn13.onclick = OpenModal;
+      btn14.onclick = OpenModal;
+      btn15.onclick = OpenModal;
+      btn16.onclick = OpenModal;
+      btn17.onclick = OpenModal;
+      btn18.onclick = OpenModal;
+      btn19.onclick = OpenModal;
+      btn20.onclick = OpenModal;
+      btn21.onclick = OpenModal;
+      btn22.onclick = OpenModal;
+      btn23.onclick = OpenModal;
+      btn24.onclick = OpenModal;
+      btn25.onclick = OpenModal;
+      btn26.onclick = OpenModal;
+      btn27.onclick = OpenModal;
+      btn28.onclick = OpenModal;
+      btn29.onclick = OpenModal;
+      btn30.onclick = OpenModal;
+      btn31.onclick = OpenModal;
+    </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
-  <script src="/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </div>
 </body>
 
 </html>

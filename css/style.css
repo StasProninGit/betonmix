@@ -31,6 +31,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.body_wraper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 
 button {
   cursor: pointer;
