@@ -44,6 +44,8 @@
 }
 
 .tabby-content {
+  display: flex;
+  flex-direction: row;
   position: absolute;
 
   left: 0; bottom: 0; right: 0;
@@ -114,12 +116,15 @@
 .beton__table {
   text-decoration: none;
   border-collapse:collapse;
-  text-align:center
+  text-align:center;
+  width: 100%;
 }
 
 .beton__table__body {
 
 }
+
+
 .beton__tr {
 
 }

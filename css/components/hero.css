@@ -18,9 +18,10 @@
 
 .hero__button {
   color: var(--white);
-  padding: 5px 10px;
+  padding: 10px 15px;
   background: var(--brown);
   border-radius: 5px;
+  font-size: 26px;
   font-weight: 900;
   transition: all 0.3s ease-in-out;
 }
