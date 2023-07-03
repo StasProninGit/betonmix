@@ -1,0 +1,4 @@
+Host: www.
+User-agent: Yandex
+Disallow: 
+Sitemap: http://betonmix.ru/sitemap.xml
