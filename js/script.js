@@ -2,12 +2,26 @@
 function init() {
   let map = new ymaps.Map('map', {
     center : [55.71289987232157,37.69605636770621],
-    zoom: 10
+    zoom: 9
 
 
   });
 
-  55.790307068946255,37.377111499999984
+  55.640304069096935,37.01811749999996
+
+  let placemark7 = new ymaps.Placemark([55.640304069096935,37.01811749999996], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://icon666.com/r/_thumb/4n5/4n52cinxh0yc_64.png',
+    iconImageSize: [45, 45],
+    iconImageOffset: [0, 0]
+  });
+
+  let placemark6 = new ymaps.Placemark([55.623386069112975,37.46534399999997], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://icon666.com/r/_thumb/4n5/4n52cinxh0yc_64.png',
+    iconImageSize: [45, 45],
+    iconImageOffset: [0, 0]
+  });
 
   let placemark5 = new ymaps.Placemark([55.790307068946255,37.377111499999984], {}, {
     iconLayout: 'default#image',
@@ -61,6 +75,8 @@ function init() {
   map.geoObjects.add(placemark3);
   map.geoObjects.add(placemark4);
   map.geoObjects.add(placemark5);
+  map.geoObjects.add(placemark6);
+  map.geoObjects.add(placemark7);
 }
 
 ymaps.ready(init);
