@@ -1,5 +1,10 @@
 @media (max-width: 1100px) {
 
+  .hero__wrapper {
+    background-image: linear-gradient(to top, rgba(89,106,114, 0.6), rgba(219, 219, 214, 0.4)), url(
+    "/img/HeroBG1.jpg");
+  }
+
   .section-title {
     font-size: 32px;
     margin-bottom: 30px;
@@ -144,6 +149,11 @@ width: 250px;
 
 
 @media (max-width: 768px) {
+
+  .hero__wrapper {
+    background-image: linear-gradient(to top, rgba(89,106,114, 0.6), rgba(219, 219, 214, 0.4)), url(
+    "/img/HeroBG1.jpg");
+  }
   .header__logo img {
     height: 50px;
     width: 50px;
@@ -162,6 +172,8 @@ width: 250px;
     padding: 20px;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+
+
   }
 
   .header__nav__link {
@@ -268,6 +280,11 @@ width: 250px;
 }
 
 @media (max-width: 568px) {
+
+  .hero__wrapper {
+    background-image: linear-gradient(to top, rgba(89,106,114, 0.6), rgba(219, 219, 214, 0.4)), url(
+    "/img/HeroBG1.jpg");
+  }
   .hero__title {
     font-size: 18px;
     padding: 10px 0px;
@@ -372,6 +389,7 @@ width: 250px;
   .header__contact__tel {
     font-size: 10px;
     padding: 2px 5px;
+    /* z-index: -1; */
   }
 
   .header__contact__mail {
@@ -425,4 +443,45 @@ width: 250px;
   .form__btn {
     font-size: 12px;
   }
+
+  .header.open .header__nav {
+    z-index: 1;
+  }
+
+  .header__burger-btn {
+    z-index: 2;
+  }
+
+  .header__contact__tel {
+    margin-left: 20px;
+  }
+
+  .header__contact__list__tel svg {
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    /* z-index: -1; */
+  }
+
+  .header__contact__list img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__contact__list__wp svg {
+    width: 20px;
+    height: 20px;
+  }
+  .reviews__media {
+    max-width: 360px;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .comment__text {
+    font-size: 10px;
+  }
+
+}
 }

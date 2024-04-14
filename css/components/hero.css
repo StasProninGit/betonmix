@@ -30,6 +30,28 @@
   transform: scale(1.1);
 }
 
+.hero__left__content svg {
+  width: 50px;
+  height: 50px;
+}
+
+.hero__left__content__text {
+  color: var(--black);
+}
+
+.hero__left__content__items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.hero__left__content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 
 
 

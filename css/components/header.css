@@ -1,6 +1,6 @@
 .header {
   position: sticky;
-  height: 80px;
+  height: 100px;
   top: 0;
   background: linear-gradient(to top right, #cccccc80 50%, #cccccc80 78%);
   z-index: 10;
@@ -16,6 +16,7 @@ justify-content: space-between;
 .header__contact {
   display: flex;
   flex-direction: column;
+
   gap: 5px;
 
 }
@@ -33,15 +34,31 @@ color: var(--white);
 }
 
 .header__contact__tel {
+margin-left: 30px;
 transition: all 0.3s ease-in-out;
 }
 .header__contact__tel:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: var(--gray);
+}
+
+.header__contact__list__tel {
+  position: relative;
+}
+.header__contact__list__tel svg {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+
+.header__contact__list {
+  display: flex;
+  align-items: center;
 }
 
 .header__contact__mail {
   font-weight: 500;
+  align-self: center;
 }
 
 .header__contact__mail:hover {
@@ -110,3 +127,7 @@ transform: translateY(-10px);
     transform: translateY(0) rotate(-45deg);
     background-color: white;
   }
+
+
+
+

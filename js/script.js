@@ -7,39 +7,49 @@ function init() {
 
   });
 
-  55.640304069096935,37.01811749999996
+  55.790307068946255,37.377111499999984
 
-  let placemark7 = new ymaps.Placemark([55.640304069096935,37.01811749999996], {}, {
-    iconLayout: 'default#image',
-    iconImageHref: 'https://icon666.com/r/_thumb/4n5/4n52cinxh0yc_64.png',
-    iconImageSize: [45, 45],
-    iconImageOffset: [0, 0]
-  });
+  let placemark7 = new ymaps.Placemark([55.640304069096935,37.01811749999996], {
 
-  let placemark6 = new ymaps.Placemark([55.623386069112975,37.46534399999997], {}, {
+  }, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://icon666.com/r/_thumb/4n5/4n52cinxh0yc_64.png',
-    iconImageSize: [45, 45],
-    iconImageOffset: [0, 0]
-  });
-
-  let placemark5 = new ymaps.Placemark([55.790307068946255,37.377111499999984], {}, {
-    iconLayout: 'default#image',
-    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
+    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/96/3986711-building-factory-industry-icon_112974.png',
     iconImageSize: [40, 40],
-    iconImageOffset: [0, 0]
-  });
+    iconImageOffset: [0, 0],
+
+});
+
+  let placemark6 = new ymaps.Placemark([55.623386069112975,37.46534399999997], {
+
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/96/3986711-building-factory-industry-icon_112974.png',
+    iconImageSize: [40, 40],
+    iconImageOffset: [0, 0],
+
+});
+
+  let placemark5 = new ymaps.Placemark([55.790307068946255,37.377111499999984], {
+
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/96/3986711-building-factory-industry-icon_112974.png',
+    iconImageSize: [40, 40],
+    iconImageOffset: [0, 0],
+
+});
+
 
   let placemark4 = new ymaps.Placemark([55.88255144861844,37.62693048530211], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
+    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/96/3986711-building-factory-industry-icon_112974.png',
     iconImageSize: [40, 40],
     iconImageOffset: [0, 0]
   });
 
   let placemark3 = new ymaps.Placemark([55.681904569055,37.6078345], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
+    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/96/3986711-building-factory-industry-icon_112974.png',
     iconImageSize: [40, 40],
     iconImageOffset: [0, 0]
   });
@@ -47,7 +57,7 @@ function init() {
 
   let placemark2 = new ymaps.Placemark([55.706089564666705,37.700657378616334], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://icon666.com/r/_thumb/bc5/bc5dttqfb81d_64.png',
+    iconImageHref: 'https://cdn.icon-icons.com/icons2/1727/PNG/96/3986711-building-factory-industry-icon_112974.png',
     iconImageSize: [40, 40],
     iconImageOffset: [0, 0]
   });
@@ -56,10 +66,12 @@ function init() {
 
   let placemark = new ymaps.Placemark([55.71289987232157,37.69605636770621], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'https://icon666.com/r/_thumb/4n5/4n52cinxh0yc_64.png',
+    iconImageHref: 'https://cdn.icon-icons.com/icons2/3078/PNG/512/student_work_office_desk_work_space_computer_working_support_icon_191191.png',
     iconImageSize: [45, 45],
     iconImageOffset: [0, 0]
   });
+
+
 
   map.controls.remove('geolocationControl'); // удаляем геолокацию
   map.controls.remove('searchControl'); // удаляем поиск
@@ -191,3 +203,14 @@ document.body.addEventListener('click', event => {
   document.querySelector("header").classList.remove("open")
 });
 
+
+// карусель
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}

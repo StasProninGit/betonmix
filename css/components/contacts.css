@@ -27,4 +27,15 @@
   text-decoration: underline;
 }
 
+.contacts__content__item__wp {
+  margin-left: 30px;
+}
+.contacts__content__item {
+  position: relative;
+}
+
+.contacts__content__item svg {
+  position: absolute;
+  top: -5px;
+}
 
