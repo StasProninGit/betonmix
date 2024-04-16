@@ -27,8 +27,8 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    
-    
+
+
   }
 
   .product__text__list {
@@ -55,4 +55,35 @@
     font-size: 18px;
     font-weight: 700;
     border-bottom: 1px solid black;
+  }
+
+  .product__price__span {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--brown);
+  }
+
+  .product__desk__content {
+    display: flex;
+    border: 1px solid var(--brown);
+    margin-bottom: 60px;
+  }
+
+  .product__desk__content__left {
+    padding: 30px;
+    width: 40%;
+    border-right: 1px solid var(--brown);
+
+  }
+
+  .product__desk__content__left__title {
+    margin-bottom: 30px;
+  }
+
+  .product__desk__content__left__title2 {
+    margin-bottom: 30px;
+  }
+
+  .product__desk__content__right {
+    padding: 30px;
   }
